@@ -1,0 +1,46 @@
+/**/
+$color-subtle                   :#c0c0c0;
+$color-primary                  :#1981fb;
+$color-info                     :#6fb4f7; // #36b6c1 is nice
+$color-success                  :#2ba540;
+$color-warning                  :#dc8100;
+$color-danger                   :#b23834;
+/**/
+$color-anchor                   : lighten($color-primary, 10%);
+$color-anchor-hover             : darken($color-primary, 20%);
+/**/
+$color-btn-default-light        : #f6f6f6;
+$color-btn-default-dark         : #d6d6d6;
+$color-btn-default-top-border   : #dbdbdb;
+$color-btn-default-bottom-border: #b8b8b8;
+/**/
+$color-btn-primary-light        : #6fb4f7;
+$color-btn-primary-dark         : #1981fb;
+$color-btn-primary-top-border   : #51a4f6;
+$color-btn-primary-bottom-border: #1262fb;
+/**/
+$color-btn-success-light        : #4cd964;
+$color-btn-success-dark         : #34b249;
+$color-btn-success-top-border   : #42cb59;
+$color-btn-success-bottom-border: #239737;
+/**/
+$color-btn-warning-light        : #ff9500;
+$color-btn-warning-dark         : #dc8100;
+$color-btn-warning-top-border   : #f79000;
+$color-btn-warning-bottom-border: #cd7800;
+/**/
+$color-btn-danger-light         : #da5f5b;
+$color-btn-danger-dark          : #b23834;
+$color-btn-danger-top-border    : #cb514d;
+$color-btn-danger-bottom-border : #a5322e;
+/**/
+$color-table-info-border        : #c9e6f2;
+$color-table-info-bg            : #f2f9fc;
+$color-table-default-border     : #d9d9d9;
+$color-table-default-bg         : #f5f5f5;
+$color-table-success-border     : #caf2c9;
+$color-table-success-bg         : #f2fcf2;
+$color-table-danger-border      : #f2c9c9;
+$color-table-danger-bg          : #fcf2f2;
+$color-table-warning-border     : #ebe5bf;
+$color-table-warning-bg         : #fcfaf2;

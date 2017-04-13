@@ -1,0 +1,90 @@
+// https://github.com/JohnAlbin/normalize-scss
+@import 'normalize';
+@include normalize();
+// core
+@import 'colors';
+@import 'mixins';
+@import 'utility'; // pre, hr, ul, ol, dd, things like that
+// grid and page structure
+@import 'grid';
+// styled patterns and elements
+@import 'type';
+@import 'tooltips';
+@import 'buttons';
+@import 'switch';
+@import 'radio';
+@import 'input';
+@import 'anchor';
+@import 'table';
+@import 'nav';
+// demo-specific stuff
+@mixin demo-head-vertical-gradient {
+  background-color: #9A8B9C;
+  background: linear-gradient(to bottom, darken(#fff, 13%) 0%, darken(#fff, 4%) 90%);
+  //E8654E
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+.container-full {
+  width: 100%;
+  margin: 0 auto;
+}
+:not(pre) > code,
+code {
+  color: #da5f5b;
+  background-color: lighten(#da5f5b, 37%);
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.note {
+  padding: 0 20px;
+  border: 1px solid #eee;
+  background: #fcfcfc;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 50px;
+  & pre {
+    border: 0;
+    float: left;
+    text-align: left;
+    border-right: 1px solid #eee;
+    margin: 0 0 0 -20px;
+    // padding: 0;
+  }
+}
+.demogrid {
+  margin: 30px -3px 20px;
+  & [class*="col-"] {
+    text-align: center;
+    padding: 1em;
+    background-color: $color-btn-primary-dark;
+    border: 3px solid white;
+    color: #fff;
+  }
+}
+.grid-pad-col-20 {
+  & > [class*="col-"] {
+    padding: 1em;
+  }
+}
+.demospacer {
+  height: 20px;
+  display: block;
+  clear: both;
+}
+.bigspacer {
+  height:2px;
+  width:100%;
+  background-color:#f5f5f5;
+  margin-top:100px;
+  margin-bottom:100px;
+  display: block;
+  clear: both;
+}
+.demotable {
+  & .tr {
+    padding: 6px 6px;
+  }
+}

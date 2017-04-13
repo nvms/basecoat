@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Basecoat-css - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Basecoat-css - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Basecoat-css - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="standard-button" data-type="mixin"><a href="#undefined-mixin-standard-button">standard-button</a></li><li class="sidebar__item sassdoc__item" data-name="outline-button" data-type="mixin"><a href="#undefined-mixin-outline-button">outline-button</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-standard-button"><h3 class="item__heading"><a class="item__name" href="#mixin-standard-button">standard-button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin standard-button() { 
+  .btn#{$selector} {
+    border-top: 1px solid $color-top-border;
+    border-bottom:1px solid $color-bottom-border;
+    -webkit-box-shadow: 0 4px 6px -5px $shadow-color;
+    @include gradient-vertical($color-light, $color-dark);
+    color:$font-color;
+    &amp;:before, &amp;:after {
+      @include gradient-side-borders($color-top-border,
+                                     $color-bottom-border);
+    }
+    &amp;:active {
+      border-top-color:darken($color-top-border, 11%);
+      border-bottom-color:darken($color-bottom-border, 0%);
+      @include box-shadow(0, 0, 7px, darken($color-dark,5%),true);
+      @include gradient-vertical(darken($color-light,3%), darken($color-dark,1.5%));
+      &amp;:before, &amp;:after {
+        @include gradient-side-borders(darken($color-top-border, 10%),
+                                       darken($color-bottom-border, 5%));
+      }
+    }
+  }
+ }" data-collapsed="@mixin standard-button() { ... }"><code>@mixin standard-button() { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>nvms</p></li></ul></section><section class="main__item container item" id="undefined-mixin-outline-button"><h3 class="item__heading"><a class="item__name" href="#mixin-outline-button">outline-button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin outline-button() { 
+  .btn#{$selector} {
+    border:1px solid $color;
+    color:$color;
+    -webkit-box-shadow: 0 4px 6px -5px #bbb;
+    &amp;:hover {
+      color:darken($color,10%);
+      border-color:darken($color,5%);
+    }
+    &amp;:active {
+      @include box-shadow(0, 0, 3px,
+                desaturate(lighten($color,5%), 20),
+                true);
+    }
+  }
+ }" data-collapsed="@mixin outline-button() { ... }"><code>@mixin outline-button() { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>nvms</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><span class="project-info__name">Basecoat-css</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

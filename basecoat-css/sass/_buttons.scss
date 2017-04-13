@@ -1,0 +1,55 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 9px 15px 11px;
+  /* somehow this looks better */
+  border-radius: 0.20rem;
+  /* .25rem */
+  &:before {
+    left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  &:after {
+    right: 0;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: -.1rem;
+    bottom: -.1rem;
+    width: 1px;
+    margin-top: 0.175rem;
+    margin-bottom: 0.175rem;
+  }
+}
+.btn-sm {
+  padding: 5px 10px 7px;
+  font-size: 90%;
+}
+.btn-lg {
+  padding: 10px 20px 12px;
+  font-size: 110%;
+}
+/* buttons ********************************************************************/
+@include outline-button(".btn-outline-default", #999);
+@include outline-button(".btn-outline-primary", $color-btn-primary-dark);
+@include outline-button(".btn-outline-success", $color-btn-success-dark);
+@include outline-button(".btn-outline-warning", $color-btn-warning-dark);
+@include outline-button(".btn-outline-danger", $color-btn-danger-dark);
+@include standard-button(".btn-default", $color-btn-default-light, $color-btn-default-dark, $color-btn-default-top-border, $color-btn-default-bottom-border, #646464, #bbb);
+@include standard-button(".btn-primary", $color-btn-primary-light, $color-btn-primary-dark, $color-btn-primary-top-border, $color-btn-primary-bottom-border);
+@include standard-button(".btn-success", $color-btn-success-light, $color-btn-success-dark, $color-btn-success-top-border, $color-btn-success-bottom-border);
+@include standard-button(".btn-warning", $color-btn-warning-light, $color-btn-warning-dark, $color-btn-warning-top-border, $color-btn-warning-bottom-border);
+@include standard-button(".btn-danger", $color-btn-danger-light, $color-btn-danger-dark, $color-btn-danger-top-border, $color-btn-danger-bottom-border);

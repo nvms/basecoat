@@ -1,0 +1,63 @@
+html {
+  line-height: 1.5;
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  color: #444;
+  zoom: 1;
+}
+body {
+  font-size: 100%;
+}
+.strong {
+  font-weight: bold !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
+.text-smaller {
+  font-size: smaller;
+}
+.text-larger {
+  font-size: larger;
+}
+.text-subtle {
+  color: $color-subtle;
+}
+.text-primary {
+  color: $color-primary !important;
+}
+.text-info {
+  color: $color-info;
+}
+.text-success {
+  color: $color-success;
+}
+.text-warning {
+  color: $color-warning;
+}
+.text-danger {
+  color: $color-danger;
+}
+h1 > .tagline,
+h2 > .tagline,
+h3 > .tagline,
+h4 > .tagline,
+h5 > .tagline,
+h6 > .tagline {
+  color: $color-subtle;
+  margin: 0;
+  font-weight: normal;
+  font-size: 70%;
+  line-height: 100%;
+}
+h1 > .tagline2,
+h2 > .tagline2,
+h3 > .tagline2,
+h4 > .tagline2,
+h5 > .tagline2,
+h6 > .tagline2 {
+  color: $color-subtle;
+  margin: 0;
+  font-weight: normal;
+  font-size: 50%;
+  line-height: 225%;
+}

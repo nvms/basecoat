@@ -1,0 +1,36 @@
+// color: darken(#BEC8DB, 20%);
+nav {
+  line-height: 50px;
+  background-color: #f8f8f8;
+  font-size: 90%;
+  & ul {
+    margin: 0;
+    padding: 0;
+    li {
+      &.brand {
+        // font-weight: bold;
+        font-size: 130%;
+        color: #555;
+        margin-right: 20px;
+        padding: 0 10px;
+      }
+      list-style-type: none;
+      display: inline-block;
+      a {
+        display: block;
+        margin: 0;
+        padding: 16px 17px;
+        color: #888;
+        &:hover {
+          color: #555;
+        }
+        &.active {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+  & .container-full ul {
+    margin: 0;
+  }
+}

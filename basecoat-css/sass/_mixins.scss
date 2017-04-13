@@ -1,0 +1,152 @@
+@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Opera 12
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+}
+@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Opera 12
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+}
+@mixin gradient-side-borders($start-color: #555, $end-color: #333) {
+  background-image: -webkit-linear-gradient($start-color, $end-color);
+  background-image: -moz-linear-gradient($start-color, $end-color);
+  background-image: -o-linear-gradient($start-color, $end-color);
+  background-image: linear-gradient($start-color, $end-color);
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $blur $color !important;
+    -moz-box-shadow: inset $top $left $blur $color !important;
+    box-shadow: inset $top $left $blur $color !important;
+  }
+  @else {
+    -webkit-box-shadow: $top $left $blur $color !important;
+    -moz-box-shadow: $top $left $blur $color !important;
+    box-shadow: $top $left $blur $color !important;
+  }
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/// @name standard-button
+/// @author nvms
+@mixin standard-button($selector, $color-light, $color-dark, $color-top-border, $color-bottom-border, $font-color: #fff, $shadow-color: #555) {
+  .btn#{$selector} {
+    border-top: 1px solid $color-top-border !important;
+    border-bottom: 1px solid $color-bottom-border !important;
+    -webkit-box-shadow: 0 4px 6px -5px $shadow-color !important;
+    @include gradient-vertical($color-light, $color-dark);
+    color: $font-color !important;
+    &:before,
+    &:after {
+      @include gradient-side-borders($color-top-border, $color-bottom-border);
+    }
+    &:active {
+      border-top-color: darken($color-top-border, 11%) !important;
+      border-bottom-color: darken($color-bottom-border, 0%) !important;
+      @include box-shadow(0, 0, 7px, darken($color-dark,5%),true);
+      @include gradient-vertical(darken($color-light,3%), darken($color-dark,1.5%));
+      &:before,
+      &:after {
+        @include gradient-side-borders(darken($color-top-border, 10%), darken($color-bottom-border, 5%));
+      }
+    }
+  }
+}
+/// @name experimental-button
+/// @author nvms
+@mixin experimental-button($selector, $color-light, $color-dark, $color-top-border, $color-bottom-border, $font-color: #fff, $shadow-color: #555) {
+  .btn#{$selector} {
+    background-color: $color-dark;
+    color: $font-color;
+    &:before,
+    &:after {}
+    &:active {
+      // @include box-shadow(0, 0, 7px, darken($color-dark,5%),true);
+      background-color: lighten($color-dark,5%);
+      &:before,
+      &:after {}
+    }
+    &:hover {
+      outline: 3px solid rgba(255,255,255,0.5);
+      outline-offset: -3px;
+    }
+  }
+}
+/// @name outline-button
+/// @author nvms
+@mixin outline-button($selector, $color) {
+  .btn#{$selector} {
+    border: 1px solid $color;
+    color: $color;
+    -webkit-box-shadow: 0 4px 6px -5px #bbb;
+    &:hover {
+      color: darken($color,10%);
+      border-color: darken($color,5%);
+    }
+    &:active {
+      @include box-shadow(0, 0, 3px, rgba(desaturate(lighten($color,5%), 20), 0.5), true);
+    }
+  }
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+// Single side border-radius
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+  -webkit-border-top-left-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  -webkit-border-top-left-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin table-tr-color ($selector, $color-border, $color-bg) {
+  .tr#{$selector} {
+    border-color: $color-border !important;
+    background-color: $color-bg !important;
+    z-index: 6;
+  }
+  .table.hover .tr#{$selector}:hover {
+    border-color: darken($color-border, 2%) !important;
+    background-color: darken($color-bg, 2%) !important;
+  }
+  .table.hover-alt .tr#{$selector}:hover {
+    border-color: darken($color-border, 2%) !important;
+    background-color: darken($color-bg, 2%) !important;
+    @include box-shadow(0, 0, 7px, darken($color-bg, 5%), false);
+    z-index:20;
+  }
+}

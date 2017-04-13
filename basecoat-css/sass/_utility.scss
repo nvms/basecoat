@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+pre {
+  padding: 15px;
+  overflow: auto;
+  line-height: 1.45;
+  border: 2px solid #eee;
+  background: #fcfcfc;
+  border-radius: 3px;
+}
+hr {
+  border-top: 1px solid #eee;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+ul,
+ol {
+  & li {
+    line-height: 1.5;
+  }
+}
+dl {
+  & dd,
+  & dt {
+    line-height: 1.5;
+  }
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.float-left {
+  float: left !important;
+}
+.float-right {
+  float: right !important;
+}
+.block {
+  display: block !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.stretch {
+  width: 100% !important;
+}
+.clear {
+  @include clearfix();
+}

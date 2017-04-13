@@ -1,0 +1,8 @@
+a {
+  color: $color-anchor;
+  text-decoration: none;
+  &:hover {
+    color: $color-anchor-hover;
+    text-decoration: none;
+  }
+}

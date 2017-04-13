@@ -1,0 +1,101 @@
+$transition-speed: 0.15s;
+input.form-radio {
+  -webkit-animation-duration: $transition-speed;
+  -moz-animation-duration: $transition-speed;
+  -o-animation-duration: $transition-speed;
+  -ms-animation-duration: $transition-speed;
+  animation-duration: $transition-speed;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-color: #808080;
+  margin: 1px 8px 0 -4px;
+  -webkit-appearance: initial;
+  -moz-appearance: initial;
+  appearance: initial;
+  display: inline-block;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  width: 18px;
+  height: 18px;
+  &:focus {
+    outline: none;
+  }
+  &:before {
+    -webkit-transition: $transition-speed ease-in-out;
+    -moz-transition: $transition-speed ease-in-out;
+    -o-transition: $transition-speed ease-in-out;
+    -ms-transition: $transition-speed ease-in-out;
+    transition: $transition-speed ease-in-out;
+    content: " ";
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+  }
+  &:checked {
+    -webkit-animation-name: radio-colour-transition;
+    -moz-animation-name: radio-colour-transition;
+    -o-animation-name: radio-colour-transition;
+    -ms-animation-name: radio-colour-transition;
+    animation-name: radio-colour-transition;
+    &:before {
+      -webkit-transform: scale(0.4, 0.4);
+      -moz-transform: scale(0.4, 0.4);
+      -o-transform: scale(0.4, 0.4);
+      -ms-transform: scale(0.4, 0.4);
+      transform: scale(0.4, 0.4);
+    }
+    &:after {
+      opacity: 0.9;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+      filter:alpha(opacity = 90);
+      -webkit-transform: scale(0.8, 0.8);
+      -moz-transform: scale(0.8, 0.8);
+      -o-transform: scale(0.8, 0.8);
+      -ms-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8);
+    }
+  }
+}
+@-moz-keyframes radio-colour-transition {
+  0% {
+    background-color: #808080;
+  }
+  1%,
+  100% {
+    background-color: #00adff;
+  }
+}
+@-webkit-keyframes radio-colour-transition {
+  0% {
+    background-color: #808080;
+  }
+  1%,
+  100% {
+    background-color: #00adff;
+  }
+}
+@-o-keyframes radio-colour-transition {
+  0% {
+    background-color: #808080;
+  }
+  1%,
+  100% {
+    background-color: #00adff;
+  }
+}
+@keyframes radio-colour-transition {
+  0% {
+    background-color: #808080;
+  }
+  1%,
+  100% {
+    background-color: #00adff;
+  }
+}
