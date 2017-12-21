@@ -1,3 +1,6 @@
+::placeholder {
+	color:#bbb;
+}
 .form-input-wrapper {
   position: relative;
   display: inline-block;
@@ -21,6 +24,7 @@
     border-radius: 3px;
     padding: 10px 11px;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+    
     &:disabled {
       background-color: #fafafa;
       border-color: #e9e9e9;
