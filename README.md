@@ -1,6 +1,6 @@
 # Basecoat
 
-Basecoat is a small CSS framework built on top of [normalize-scss](https://github.com/JohnAlbin/normalize-scss): "*A modern alternative to CSS resets*". It began as (and still remains) a personal project meant to be used as a base style for desktop applications built using [Electron](https://electron.atom.io/).
+Basecoat is a small CSS framework built on top of [normalize-scss](https://github.com/JohnAlbin/normalize-scss): "*A modern alternative to CSS resets*". It began as (and still remains) a personal project meant to be used as a base style for desktop applications built using [Electron](https://electron.atom.io/). It is not limited to this particular use case, though.
 
 ### Requirements for building
 
