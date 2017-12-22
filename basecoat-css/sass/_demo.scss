@@ -83,6 +83,7 @@ code {
 fixed-nav {
   position: fixed;
   width:200px;
+  // border-right:1px solid #eee;
   & ul {
     margin-top:10px;
     list-style-type:none;
@@ -90,17 +91,25 @@ fixed-nav {
     padding:0;
     & li {
       & > [class*="active"] {
-        border-left:2px solid #F0C9CA;
-        padding-left:10px;
-        background-color:#fafafa;
-        color:#D55451;
+        // border-left:2px solid #F0C9CA;
+        // padding-left:10px;
+        // background-color:#fafafa;
+        // color:#333;
       }
       & a {
-        padding:2px 0 3px 12px;
+        padding:2px 0 3px 5px;
         display:block;
-        color:#E08F8E;
+        color:#aaa;
         &:hover {
-          color:darken(#D55451, 20%);
+          color:darken(#333, 20%);
+          // border-left:2px solid #F0C9CA;
+        }
+      }
+      & ul {
+        margin: 0 0 0 15px;
+        & li {
+          padding: 0;
+          margin: 0;
         }
       }
     }
