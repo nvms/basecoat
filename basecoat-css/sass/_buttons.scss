@@ -63,3 +63,10 @@
 @include standard-button(".btn-success", $color-btn-success-light, $color-btn-success-dark, $color-btn-success-top-border, $color-btn-success-bottom-border);
 @include standard-button(".btn-warning", $color-btn-warning-light, $color-btn-warning-dark, $color-btn-warning-top-border, $color-btn-warning-bottom-border);
 @include standard-button(".btn-danger", $color-btn-danger-light, $color-btn-danger-dark, $color-btn-danger-top-border, $color-btn-danger-bottom-border);
+
+@include flat-button('.btn-flat-default', $color-btn-default-light, $color-btn-default-dark, $color-btn-default-top-border, $color-btn-default-bottom-border, #646464, #bbb);
+@include flat-button('.btn-flat-primary', $color-btn-primary-light, $color-btn-primary-dark, $color-btn-primary-top-border, $color-btn-primary-bottom-border);
+@include flat-button('.btn-flat-purple', $color-btn-purple-light, $color-btn-purple-dark, $color-btn-purple-top-border, $color-btn-purple-bottom-border);
+@include flat-button('.btn-flat-success', $color-btn-success-light, $color-btn-success-dark, $color-btn-success-top-border, $color-btn-success-bottom-border);
+@include flat-button('.btn-flat-warning', $color-btn-warning-light, $color-btn-warning-dark, $color-btn-warning-top-border, $color-btn-warning-bottom-border);
+@include flat-button('.btn-flat-danger', $color-btn-danger-light, $color-btn-danger-dark, $color-btn-danger-top-border, $color-btn-danger-bottom-border);

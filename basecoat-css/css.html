@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Basecoat ♥️</title>
+		<link rel="stylesheet" href="css/basecoat.css">
+	</head>
+	<body>
+		<nav class="fixed">
+			<div class="container">
+				<ul>
+					<li class="brand">Basecoat</li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="css.html" class="active">CSS</a></li>
+					<li><a href="components.html">Components</a></li>
+					<li><a href="javascript.html">JavaScript</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main class="container" role="main">
+			<div class="grid">
+				<div class="col-3-16">
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<fixed-nav>
+					<ul>
+						<li>
+							<a href="#" class="active">Typography</a>
+							<ul>
+								<li><a href="#">Paragraphs</a></li>
+								<li><a href="#">Headings</a></li>
+								<li><a href="#">Taglines</a></li>
+								<li><a href="#">Colors</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Grid</a>
+							<ul>
+								<li><a href="#">Sixteen-column</a></li>
+								<li><a href="#">Twelve-column</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Lists</a>
+						</li>
+						<li>
+							<a href="#">Utilities</a>
+						</li>
+						<li>
+							<a href="#">Tables</a>
+						</li>
+					</ul>
+					</fixed-nav>
+				</div>
+				<div class="col-1-16">&nbsp;</div>
+				<div class="col-12-16">
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<h1>Typography</h1>
+					<div class="grid">
+						<div class="col-16-16">
+							<h3>Paragraphs</h3>
+							<div class="el_demo">
+								<p class="text-larger">
+									This paragraph element has had the <code>.text-larger</code> class applied to it, making it stand out a bit more than your average paragraph block. <strong>Some bold</strong> type here, and even a
+									<a href="#" title="test link">link</a>. <i>This type is
+									italicized</i>, and <u>this bit</u> is underlined.
+								</p>
+								<p>This is a normal-sized paragraph, with no classes applied to it. Here's another <a href="#">link</a>.</p>
+								<p class="text-smaller">This paragraph has had <code>.text-smaller</code> applied to it. Here is yet another <a href="#">link</a>.</p>
+							</div>
+							<div class="col-16-16">
+								<demo class="block">
+                  <pre class="demo">
+TODO: paragraph demo code</pre>
+								</demo>
+							</div>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="col-16-16">
+							<h3>Headings</h3>
+							<div class="el_demo">
+								<h1 class="not-demo">H[1]ello, world</h1> <!-- The not-demo class is not necessary in production. -->
+								<h2>H[2]ello, world</h2>
+								<h3>H[3]ello, world</h3>
+								<h4>H[4]ello, world</h4>
+								<h5>H[5]ello, world</h5>
+								<h6>H[6]ello, world</h6>
+							</div>
+							<div class="col-16-16">
+								<demo class="block">
+                  <pre class="demo">
+TODO: headings demo code</pre>
+								</demo>
+							</div>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="col-16-16">
+							<h3>Taglines <p class="tagline">I am a tagline</p></h3>
+							<div class="el_demo">
+								<p>Stick a <code>p.tagline</code> inside of an <code>h1</code>&rarr;<code>h6</code> to give it a nice-looking tagline like the one above. Taglines are 30% smaller than their parent heading element.</p>
+							</div>
+							<div class="col-16-16">
+								<demo class="block">
+                  <pre class="demo">
+TODO: taglines demo code</pre>
+								</demo>
+							</div>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="col-16-16">
+							<h3>Colors</h3>
+							<p>
+								The following classes <span class="text-primary">can</span> be <span class="text-success">used</span> to <span class="text-subtle">apply</span> some <span class="text-info">color</span> to <span class="text-warning">blocks</span> of <span class="text-danger">text</span>.
+							</p>
+							<div class="el_demo">
+								<p>
+									<span class="text-primary">.text-primary</span>
+									<br/>
+									<span class="text-info">.text-info</span>
+									<br/>
+									<span class="text-success">.text-success</span>
+									<br/>
+									<span class="text-warning">.text-warning</span>
+									<br/>
+									<span class="text-danger">.text-danger</span>
+									<br/>
+									<span class="text-subtle">.text-subtle</span>
+								</p>
+							</div>
+							<div class="col-16-16">
+								<demo class="block">
+                  <pre class="demo">
+TODO: colors demo code</pre>
+								</demo>
+							</div>
+						</div>
+					</div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<h1>Grid</h1>
+					<!-- .demogrid just adds margin:0 -3px and a white border that has been -->
+					<!-- added for visibility and demonstrational purposes. otherwise, the -->
+					<!-- grid will take up 100% of the parent space. -->
+					<p>For demonstration purposes, a three-pixel gutter in the form of a white border has been added around each grid column below. Normally, this gutter does not exist and each grid column will use the maximum amount of space available.</p>
+					<p>You can arrange blocks in any way you would like. Each row will fold automatically after the maximum number of blocks is reached.</p>
+					<p>A sixteen-column and twelve-column grid are available.</p>
+					<div class="grid">
+						<div class="col-16-16">
+							<div class="el_demo">
+								<h4>Sixteen-column grid</h4>
+								<div class="grid demogrid">
+									<div class="col-1-16">1</div>
+									<div class="col-2-16">2</div>
+									<div class="col-3-16">3</div>
+									<div class="col-4-16">4</div>
+									<div class="col-5-16">5</div>
+									<div class="col-1-16">1</div>
+									<div class="col-4-16">4</div>
+									<div class="col-4-16">4</div>
+									<div class="col-4-16">4</div>
+									<div class="col-4-16">4</div>
+									<div class="col-8-16">8</div>
+									<div class="col-8-16">8</div>
+									<div class="col-16-16">16</div>
+								</div>
+								<h4>Twelve-column grid</h4>
+								<div class="grid demogrid">
+									<div class="col-1-12">1</div>
+									<div class="col-2-12">2</div>
+									<div class="col-3-12">3</div>
+									<div class="col-4-12">4</div>
+									<div class="col-2-12">2</div>
+									<div class="col-3-12">3</div>
+									<div class="col-3-12">3</div>
+									<div class="col-3-12">3</div>
+									<div class="col-3-12">3</div>
+									<div class="col-4-12">4</div>
+									<div class="col-4-12">4</div>
+									<div class="col-4-12">4</div>
+									<div class="col-12-12">12</div>
+								</div>
+							</div>
+							<div class="col-16-16">
+								<demo class="block">
+                  <pre class="demo">
+TODO: grids demo code</pre>
+								</demo>
+							</div>
+						</div>
+					</div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<h1>Lists</h1>
+					<p>The style for all types of list elements have been largely untouched.</p>
+					<div class="grid utilgrid">
+						<div class="grid">
+							<div class="col-16-16">
+								<div class="el_demo">
+									<div class="col-4-12">
+										<h3>Ordered<p class="tagline"><code>ol > li</code></p></h3>
+										<ol>
+											<li>List Item 1</li>
+											<li>List Item 2</li>
+											<li>List Item 3</li>
+										</ol>
+									</div>
+									<div class="col-4-12">
+										<h3>Unordered<p class="tagline"><code>ul > li</code></p></h3>
+										<ul>
+											<li>List Item 1</li>
+											<li>List Item 2</li>
+											<li>List Item 3</li>
+										</ul>
+									</div>
+									<div class="col-4-12">
+										<h3>Definition<p class="tagline"><code>dl > dt > dd</code></p></h3>
+										<dl>
+											<dt>Definition term title 1</dt>
+											<dd>Definition term description</dd>
+											<dt>Definition term title 2</dt>
+											<dd>Definition term description</dd>
+										</dl>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="col-16-16">
+									<demo class="block">
+                  <pre class="demo">
+TODO: lists demo code</pre>
+									</demo>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="grid utilgrid">
+						<h1>Utilities</h1>
+						<div class="col-12-12">
+							<h3>Text alignment</h3>
+							<span class="text-left block"><code>.text-left</code></span>
+							<span class="text-center block"><code>.text-center</code></span>
+							<span class="text-right block"><code>.text-right</code></span>
+						</div>
+						<div class="col-6-12">
+							<h3>Stretch<p class="tagline"><code>.stretch</code> simply applies <code>width:100%;</code></p></h3>
+							<span class="btn btn-sm btn-success stretch">.stretch</span>
+						</div>
+						<div class="col-6-12">
+							<h3>Block<p class="tagline"><code>.block</code> applies <code>display:block;</code></p></h3>
+							<span class="btn btn-sm btn-primary block">.block</span>
+							<h3>Inline-block<p class="tagline"><code>.inline-block</code> applies <code>display:inline-block;</code></h3>
+								<span class="btn btn-sm btn-default inline-block">Cancel</span>
+								<span class="btn btn-sm btn-danger inline-block">Delete!</span>
+							</div>
+						</div>
+						
+						<div class="demospacer"></div>
+						<div class="demospacer"></div>
+						<div class="demospacer"></div>
+						<div class="demospacer"></div>
+						<h1>Tables</h1>
+						<p>Okay, so they aren't really tables <i>per se</i>. Don't be afraid. They are functionally quite similar.</p>
+						<p>By default, each <code>.tr</code> has six pixels of padding applied to it for readability.</p>
+						<div class="grid">
+							<div class="col-16-16">
+								<div class="el_demo">
+									<div class="grid utilgrid" style="margin-top:0;">
+										<div class="col-8-16">
+											<h3>Colors</h3>
+											<p>No hover applied.</p>
+											<div class="table">
+												<div class="tr info">Hey! Listen!</div>
+												<div class="tr text-smaller"><code>.tr.info</code></div>
+												<div class="tr default">Hi</div>
+												<div class="tr text-smaller"><code>.tr.default</code></div>
+												<div class="tr success">Hello</div>
+												<div class="tr text-smaller"><code>.tr.success</code></div>
+											</div>
+										</div>
+										<div class="col-8-16">
+											<h3>&nbsp;</h3>
+											<p>Has <code>.hover</code> applied.</p>
+											<div class="table hover">
+												<div class="tr danger">Oh no, a <a href="#">link</a>?</div>
+												<div class="tr text-smaller"><code>.tr.danger</code></div>
+												<div class="tr warning">Look out!</div>
+												<div class="tr text-smaller"><code>.tr.warning</code></div>
+												<div class="tr">&nbsp;</div>
+												<div class="tr default text-subtle text-smaller">Good job. You've done well. Keep it up. Wow.</div>
+											</div>
+										</div>
+										<div class="col-16-16">
+											<h3>Stick a grid in there</h3>
+											<p>The following table makes use of the grid and has the <code>.hover-alt</code> class applied to it.</p>
+											<div class="table hover-alt">
+												<div class="tr info">
+													<div class="grid">
+														<div class="col-1-16">#</div>
+														<div class="col-4-16 strong">Last</div>
+														<div class="col-4-16 strong">First</div>
+														<div class="col-4-16 strong">City</div>
+														<div class="col-3-16 strong">State</div>
+													</div>
+												</div>
+												<div class="tr">
+													<div class="grid">
+														<div class="col-1-16">1</div>
+														<div class="col-4-16">Williams</div>
+														<div class="col-4-16">Ryan</div>
+														<div class="col-4-16">Aberdeen</div>
+														<div class="col-3-16">WA</div>
+													</div>
+												</div>
+												<div class="tr danger">
+													<div class="grid">
+														<div class="col-1-16">2</div>
+														<div class="col-4-16">Moore</div>
+														<div class="col-4-16">Matt</div>
+														<div class="col-4-16">Springdale</div>
+														<div class="col-3-16">AR</div>
+													</div>
+												</div>
+												<div class="tr danger">
+													<div class="grid">
+														<div class="col-1-16">3</div>
+														<div class="col-4-16">Stevenson</div>
+														<div class="col-4-16">David</div>
+														<div class="col-4-16">Altamont</div>
+														<div class="col-3-16">IL</div>
+													</div>
+												</div>
+												<div class="tr danger">
+													<div class="grid">
+														<div class="col-1-16">4</div>
+														<div class="col-4-16">Lee</div>
+														<div class="col-4-16">James</div>
+														<div class="col-4-16">Casper</div>
+														<div class="col-3-16">WY</div>
+													</div>
+												</div>
+												<div class="tr">
+													<div class="grid">
+														<div class="col-1-16">5</div>
+														<div class="col-4-16">Pyers</div>
+														<div class="col-8-16">Jonathan</div>
+														<div class="col-3-16">CA</div>
+													</div>
+												</div>
+												<div class="tr default text-smaller text-subtle">
+													Showing 1 - 5 of 5
+													<span class="float-right"><a href="#">Action</a></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div></div></div><div class="col-16-16">
+								<demo class="block">
+                  <pre class="demo">
+TODO: tables demo code</pre>
+								</demo>
+							</div>
+						</div>
+					</div>
+				</main>
+			</body>
+		</html>

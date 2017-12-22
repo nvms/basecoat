@@ -118,7 +118,41 @@ fixed-nav {
 
 
 h1:not(.not-demo) {
-  margin-top:0;
+  margin-top:0px;
   border-bottom:1px solid #eee;
   padding-bottom:15px;
+}
+
+.el_demo {
+  border:3px solid #efefef;
+  & > [class*="col-"] {
+    padding: 5px;
+  }
+  margin-bottom:0;
+  padding-bottom:0;
+  padding:15px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  // padding:5px;
+}
+
+
+demo {
+  background:#efefef;
+  width:100%;
+  padding:20px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+
+  & pre.demo {
+    padding: 0;
+    margin: 0;
+    background:transparent;
+    font-size:90%;
+  }
+}
+
+
+main {
+  padding-bottom:100px;
 }
