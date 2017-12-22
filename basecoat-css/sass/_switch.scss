@@ -40,7 +40,7 @@ input {
         width: 24px;
         top: 50%;
         margin-top: -12px;
-        left: 0px;
+        left: -1px;
         border-radius: 60px;
         background: rgb(214, 214, 214);
         transition: all 0.25s ease-in-out;
@@ -64,14 +64,14 @@ input {
         background: rgb(41, 141, 252);
         transition: all 0.25s ease-in-out;
       }
-      /* this is the color of the switch handle when it is in the on position */
+      /* this is the color and position of the switch handle when it is in the on position */
       & + label:after {
         background: rgb(15, 103, 207);
-        left: $sw-width - $sw-height -4;
+        left: $sw-width - $sw-height -3;
       }
       /* this is the switch when it is in the on position and being clicked */
       & + label:active:after {
-        left: $sw-width - $sw-height -10;
+        left: $sw-width - $sw-height -9;
       }
       /* this is the color of the track to the right of the switch when it is in the on position */
       & + label {
