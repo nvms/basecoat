@@ -2,12 +2,6 @@
 
 Basecoat is a small CSS framework built on top of [normalize-scss](https://github.com/JohnAlbin/normalize-scss): "*A modern alternative to CSS resets*". It began as (and still remains) a personal project meant to be used as a base style for desktop applications built using [Electron](https://electron.atom.io/). It is not limited to this particular use case, though.
 
-### Requirements for building
-
- - nodejs (built on 7.4.0)
- - npm (built on 4.1.1)
- - gulp (built on 3.9.1)
-
 ### Instructions for building
  - Clone this repository.
  - Install dependencies with `npm install`.
