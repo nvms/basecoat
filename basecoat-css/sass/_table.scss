@@ -5,6 +5,7 @@
     background-color: #fff;
     position: relative;
     z-index: 5;
+    padding:6px;
   }
   & .tr:not(:first-child) {
     margin-top: -#{$border-width};
