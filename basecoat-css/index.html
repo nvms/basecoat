@@ -1,375 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Basecoat ♥️</title>
-  <link rel="stylesheet" href="css/basecoat.css">
-</head>
-
-<body>
-
-  <nav>
-    <div class="container">
-      <ul>
-        <li class="brand">Basecoat</li>
-        <li><a href="#" class="active">Typography</a></li>
-        <li><a href="#">JavaScript</a></li>
-        <li><a href="#">Components</a></li>
-      </ul>
-    </div>
-
-  </nav>
-
-
-
-  <main class="container" role="main">
-    <div class="demospacer"></div>
-    <div class="demospacer"></div>
-    <h1>Typography</h1>
-    <div class="demospacer"></div>
-    <div class="demospacer"></div>
-    <div class="demospacer"></div>
-
-    <h2>Paragraphs <p class="tagline">The bread and butter</p></h2>
-    <p class="text-larger">
-      This paragraph element has had the <code>.text-larger</code> class applied to it, making it stand out a bit more than your average paragraph block. <strong>Some bold</strong> type here, and even a
-      <a href="#" title="test link">link</a>. <i>This type is
-                  italicized</i>, and <u>this bit</u> is underlined.
-    </p>
-    <p>This is a normal-sized paragraph, with no classes applied to it. Here's another <a href="#">link</a>.</p>
-    <p class="text-smaller">This paragraph has had <code>.text-smaller</code> applied to it. Here is yet another <a href="#">link</a>.</p>
-
-    <div class="bigspacer"></div>
-
-    <h2>Color variations</h2>
-    <p>
-      <span class="text-primary">.text-primary</span>
-      <br/>
-      <span class="text-info">.text-info</span>
-      <br/>
-      <span class="text-success">.text-success</span>
-      <br/>
-      <span class="text-warning">.text-warning</span>
-      <br/>
-      <span class="text-danger">.text-danger</span>
-      <br/>
-      <span class="text-subtle">.text-subtle</span>
-    </p>
-
-    <div class="bigspacer"></div>
-
-    <h2>Taglines <p class="tagline">I am a tagline.</p></h2>
-    <!--<div class="note">-->
-      <p>Stick a <code>.tagline</code> inside of an <code>h1</code>&rarr;<code>h6</code> to give it a nice-looking tagline. Taglines are 30% smaller than their respective heading element.</p>
-    <!--</div>-->
-
-    <div class="bigspacer"></div>
-
-    <h2>Buttons <p class="tagline">Regular buttons. Outlined buttons.</p></h2>
-    <div class="grid">
-      <div class="row">
-        <div class="col-8-16 text-center">
-          <p>
-            <span class="btn btn-lg btn-default">Large</span>
-            <span class="btn btn-lg btn-primary">Buttons</span>
-          </p>
-          <p>
-            <span class="btn btn-default">Default</span>
-            <span class="btn btn-primary">Primary</span>
-            <span class="btn btn-success">Success</span>
-            <span class="btn btn-warning">Warning</span>
-            <span class="btn btn-danger">Danger</span>
-          </p>
-          <p>
-            <span class="btn btn-sm btn-default">Small</span>
-            <span class="btn btn-sm btn-primary">Buttons</span>
-          </p>
-        </div>
-        <div class="col-8-16 text-center">
-          <p>
-            <span class="btn btn-outline-default">Default</span>
-            <span class="btn btn-outline-primary">Primary</span>
-            <span class="btn btn-outline-success">Success</span>
-            <span class="btn btn-outline-warning">Warning</span>
-            <span class="btn btn-outline-danger">Danger</span>
-          </p>
-          <p>
-            <span class="btn btn-sm btn-outline-default">Default</span>
-            <span class="btn btn-sm btn-outline-primary">Primary</span>
-            <span class="btn btn-sm btn-outline-success">Success</span>
-            <span class="btn btn-sm btn-outline-warning">Warning</span>
-            <span class="btn btn-sm btn-outline-danger">Danger</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="bigspacer"></div>
-
-    <h2>Grid</h2>
-    <!-- .demogrid just adds margin:0 -3px due to the white border that has been -->
-    <!-- added just for visibility and demonstrational purposes. -->
-    <div class="grid demogrid">
-      <div class="col-1-16">1</div>
-      <div class="col-2-16">2</div>
-      <div class="col-3-16">3</div>
-      <div class="col-4-16">4</div>
-      <div class="col-5-16">5</div>
-      <div class="col-1-16">1</div>
-      <div class="col-4-16">4</div>
-      <div class="col-4-16">4</div>
-      <div class="col-4-16">4</div>
-      <div class="col-4-16">4</div>
-      <div class="col-8-16">8</div>
-      <div class="col-8-16">8</div>
-      <div class="col-16-16">16</div>
-    </div>
-
-    <div class="bigspacer"></div>
-
-    <h2>Form components</h2>
-    <div class="grid grid-pad-col-20">
-      <div class="col-8-16">
-
-        <h3>Input fields</h3>
-        <p>Vanilla.</p>
-        <div class="form-input-wrapper">
-          <input type="text" id="user" class="form-input" required>
-        </div>
-        <div class="form-input-wrapper">
-          <input type="password" class="form-input" required>
-        </div>
-        <p>With placeholder.</p>
-        <div class="form-input-wrapper">
-          <input type="text" id="user" class="form-input" placeholder="Username" required>
-        </div>
-        <div class="form-input-wrapper">
-          <input type="password" class="form-input" placeholder="Password" required>
-        </div>
-        <p>Placeholder has been replaced with a label.</p>
-        <div class="form-input-wrapper">
-          <input type="text" id="user" class="form-input" required>
-          <label for="user">Username</label>
-        </div>
-        <div class="form-input-wrapper">
-          <input type="password" class="form-input" required>
-          <label for="user">Password</label>
-        </div>
-        <p>These have both a placeholder <i>and</i> a label.</p>
-        <div class="form-input-wrapper">
-          <input type="text" id="user" class="form-input" placeholder="Username" required>
-          <label for="user">Username</label>
-        </div>
-        <div class="form-input-wrapper">
-          <input type="password" class="form-input" placeholder="Password" required>
-          <label for="xx">Password</label>
-        </div>
-        <p>Disabled.</p>
-        <div class="form-input-wrapper">
-          <input type="text" class="form-input" disabled value="" placeholder="Username">
-          <label for="user">This label doesn't show up</label>
-        </div>
-      </div>
-      <div class="col-8-16">
-        <h3>Textarea</h3>
-        <p>With <code>.stretch</code> applied to it</p>
-        <textarea class="block stretch" rows="5" cols="50"></textarea>
-        <p>Without <code>.stretch</code> applied to it</p>
-        <textarea class="block" rows="5" cols="45"></textarea>
-      </div>
-    </div>
-    <div class="grid grid-pad-col-20">
-      <div class="col-4-12">
-        <h3>Radio Buttons <p class="tagline">Styled after OS X 10.10 radio buttons</p></h3>
-        <p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="form-radio" value="option1" checked="checked" class="form-radio" />Option 1
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="form-radio" value="option2" class="form-radio" />Option 2
-            </label>
-          </div>
-        </p>
-      </div>
-      <div class="col-4-12">
-        <h3>Switches <p class="tagline">Functionally, these are checkboxes</p></h3>
-        <input type="checkbox" name="toggle" class="sw" id="toggle-1" checked>
-        <label for="toggle-1"></label>
-        <br/>
-        <input type="checkbox" name="toggle" class="sw" id="toggle-2">
-        <label for="toggle-2"></label>
-      </div>
-      <div class="col-4-12">
-        <!-- <h3>Checkboxes</h3> -->
-      </div>
-    </div>
-
-    <div class="bigspacer"></div>
-
-    <h2>Utilities</h2>
-    <div class="grid grid-pad-col-20">
-      <div class="col-4-12">
-        <h3><code>ol > li</code></h3>
-        <ol>
-          <li>List Item 1</li>
-          <li>List Item 2</li>
-          <li>List Item 3</li>
-        </ol>
-      </div>
-      <div class="col-4-12">
-        <h3><code>ul > li</code></h3>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Basecoat ♥️</title>
+    <link rel="stylesheet" href="css/basecoat.css">
+  </head>
+  <body>
+    <nav class="fixed">
+      <div class="container">
         <ul>
-          <li>List Item 1</li>
-          <li>List Item 2</li>
-          <li>List Item 3</li>
+          <li class="brand">Basecoat</li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#" class="active">Components</a></li>
+          <li><a href="#">JavaScript</a></li>
         </ul>
       </div>
-      <div class="col-4-12">
-        <h3><code>dl > dt > dd</code></h3>
-        <dl>
-          <dt>Definition term title 1</dt>
-          <dd>Definition term description</dd>
-          <dt>Definition term title 2</dt>
-          <dd>Definition term description</dd>
-        </dl>
+    </nav>
+    <main class="container" role="main">
+      <div class="grid">
+        <div class="col-3-16">
+          <div class="demospacer"></div>
+          <div class="demospacer"></div>
+          <div class="demospacer"></div>
+          <div class="demospacer"></div>
+          <div class="fixed">
+            hello
+          </div>
+        </div>
+        <div class="col-13-16">
+          <div class="demospacer"></div>
+          <div class="demospacer"></div>
+          <div class="demospacer"></div>
+          <h2>Paragraphs <p class="tagline">The bread and butter</p></h2>
+          <p class="text-larger">
+            This paragraph element has had the <code>.text-larger</code> class applied to it, making it stand out a bit more than your average paragraph block. <strong>Some bold</strong> type here, and even a
+            <a href="#" title="test link">link</a>. <i>This type is
+            italicized</i>, and <u>this bit</u> is underlined.
+          </p>
+          <p>This is a normal-sized paragraph, with no classes applied to it. Here's another <a href="#">link</a>.</p>
+          <p class="text-smaller">This paragraph has had <code>.text-smaller</code> applied to it. Here is yet another <a href="#">link</a>.</p>
+          <div class="demospacer"></div>
+          <h2>Color variations</h2>
+          <p>
+            <span class="text-primary">.text-primary</span>
+            <br/>
+            <span class="text-info">.text-info</span>
+            <br/>
+            <span class="text-success">.text-success</span>
+            <br/>
+            <span class="text-warning">.text-warning</span>
+            <br/>
+            <span class="text-danger">.text-danger</span>
+            <br/>
+            <span class="text-subtle">.text-subtle</span>
+          </p>
+          <div class="demospacer"></div>
+          <h2>Taglines <p class="tagline">I am a tagline.</p></h2>
+          <!--<div class="note">-->
+          <p>Stick a <code>.tagline</code> inside of an <code>h1</code>&rarr;<code>h6</code> to give it a nice-looking tagline. Taglines are 30% smaller than their parent heading element.</p>
+          <!--</div>-->
+          <div class="demospacer"></div>
+          <h2>Buttons <p class="tagline">Regular buttons. Outlined buttons.</p></h2>
+          <div class="grid">
+            <div class="row">
+              <div class="col-8-16 text-center">
+                <p>
+                  <span class="btn btn-lg btn-default">Large</span>
+                  <span class="btn btn-lg btn-primary">Buttons</span>
+                </p>
+                <p>
+                  <span class="btn btn-primary">Primary</span>
+                  <span class="btn btn-success">Success</span>
+                  <span class="btn btn-warning">Warning</span>
+                  <span class="btn btn-danger">Danger</span>
+                </p>
+                <p>
+                  <span class="btn btn-md btn-default">Medium</span>
+                  <span class="btn btn-md btn-primary">Buttons</span>
+                </p>
+                <p>
+                  <span class="btn btn-sm btn-default">Small</span>
+                  <span class="btn btn-sm btn-primary">Buttons</span>
+                </p>
+              </div>
+              <div class="col-8-16 text-center">
+                <p>
+                  <span class="btn btn-outline-primary">Primary</span>
+                  <span class="btn btn-outline-success">Success</span>
+                  <span class="btn btn-outline-warning">Warning</span>
+                  <span class="btn btn-outline-danger">Danger</span>
+                </p>
+                <p>
+                  <span class="btn btn-sm btn-outline-default">Default</span>
+                  <span class="btn btn-sm btn-outline-primary">Primary</span>
+                  <span class="btn btn-sm btn-outline-success">Success</span>
+                  <span class="btn btn-sm btn-outline-warning">Warning</span>
+                  <span class="btn btn-sm btn-outline-danger">Danger</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="demospacer"></div>
+          <h2>Grid</h2>
+          <!-- .demogrid just adds margin:0 -3px due to the white border that has been -->
+          <!-- added just for visibility and demonstrational purposes. -->
+          <div class="grid demogrid">
+            <div class="col-1-16">1</div>
+            <div class="col-2-16">2</div>
+            <div class="col-3-16">3</div>
+            <div class="col-4-16">4</div>
+            <div class="col-5-16">5</div>
+            <div class="col-1-16">1</div>
+            <div class="col-4-16">4</div>
+            <div class="col-4-16">4</div>
+            <div class="col-4-16">4</div>
+            <div class="col-4-16">4</div>
+            <div class="col-8-16">8</div>
+            <div class="col-8-16">8</div>
+            <div class="col-16-16">16</div>
+          </div>
+          <div class="demospacer"></div>
+          <h2>Form components</h2>
+          <div class="grid">
+            <div class="col-8-16">
+              <h3>Input fields</h3>
+              <p>Vanilla.</p>
+              <div class="form-input-wrapper">
+                <input type="text" id="user" class="form-input" required>
+              </div>
+              <p>With placeholder.</p>
+              <div class="form-input-wrapper">
+                <input type="text" id="user" class="form-input" placeholder="Username" required>
+              </div>
+              <p>Placeholder has been replaced with a label.</p>
+              <div class="form-input-wrapper">
+                <input type="text" id="user" class="form-input" required>
+                <label for="user">Username</label>
+              </div>
+              <p>These have both a placeholder and a label.</p>
+              <div class="form-input-wrapper">
+                <input type="text" id="user" class="form-input" placeholder="Username" required>
+                <label for="user">Username</label>
+              </div>
+              <br/>
+              <br/>
+              <div class="form-input-wrapper">
+                <input type="password" class="form-input" placeholder="Password" required>
+                <label for="xx">Password</label>
+              </div>
+              <p>Disabled.</p>
+              <div class="form-input-wrapper">
+                <input type="text" class="form-input" disabled value="" placeholder="Username">
+                <label for="user">This label doesn't show up</label>
+              </div>
+            </div>
+            <div class="col-8-16">
+              <h3>Textarea</h3>
+              <p>With <code>.stretch</code> applied to it</p>
+              <textarea class="block stretch" rows="5" cols="50"></textarea>
+              <p>Without <code>.stretch</code> applied to it</p>
+              <textarea class="block" rows="5" cols="25"></textarea>
+            </div>
+          </div>
+          <div class="demospacer"></div>
+          <div class="grid">
+            <div class="col-4-12">
+              <h3>Radio Buttons <p class="tagline">Minimal styling</p></h3>
+              <p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="form-radio" value="option1" checked="checked" class="form-radio" />Option 1
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="form-radio" value="option2" class="form-radio" />Option 2
+                  </label>
+                </div>
+              </p>
+            </div>
+            <div class="col-4-12">
+              <h3>Switches <p class="tagline">Functionally, these are checkboxes</p></h3>
+              <input type="checkbox" name="toggle" class="sw" id="toggle-1" checked>
+              <label for="toggle-1"></label>
+              <br/>
+              <input type="checkbox" name="toggle" class="sw" id="toggle-2">
+              <label for="toggle-2"></label>
+            </div>
+            <div class="col-4-12">
+              <!-- <h3>Checkboxes</h3> -->
+            </div>
+          </div>
+          <div class="demospacer"></div>
+          <h2>Lists</h2>
+          <div class="grid utilgrid">
+            <div class="col-4-12">
+              <h3><code>ol > li</code></h3>
+              <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+              </ol>
+            </div>
+            <div class="col-4-12">
+              <h3><code>ul > li</code></h3>
+              <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+              </ul>
+            </div>
+            <div class="col-4-12">
+              <h3><code>dl > dt > dd</code></h3>
+              <dl>
+                <dt>Definition term title 1</dt>
+                <dd>Definition term description</dd>
+                <dt>Definition term title 2</dt>
+                <dd>Definition term description</dd>
+              </dl>
+            </div>
+            <h2>Utility classes</h2>
+            <div class="col-8-12">
+              <h3>Text alignment</h3>
+              <span class="text-left block"><code>.text-left</code></span>
+              <span class="text-center block"><code>.text-center</code></span>
+              <span class="text-right block"><code>.text-right</code></span>
+            </div>
+            <div class="col-4-12">
+              <h3><code>.stretch</code><p class="tagline">This simply applies <code>width:100%;</code></p></h3>
+              <span class="btn btn-warning">Not stretched</span>
+              <br/>
+              <br/>
+              <span class="btn btn-success stretch">Stretched</span>
+            </div>
+          </div>
+          <h3><code>.block</code></h3>
+          <span class="btn btn-primary block">.block</span>
+          <h3><code>.inline-block</code></h3>
+          <span class="btn btn-default inline-block">.inline-block</span>
+          <span class="btn btn-danger inline-block">.inline-block</span>
+          <div class="demospacer"></div>
+          <h2>Tables <p class="tagline">Actually... <small>they aren't really tables</small></p></h2>
+          <div class="grid utilgrid">
+            <div class="col-8-16">
+              <h3>Colors <p class="tagline">No hover applied</p></h3>
+              <div class="table demotable">
+                <div class="tr info">Hey</div>
+                <div class="tr text-smaller"><code>.tr.info</code></div>
+                <div class="tr default">Hi</div>
+                <div class="tr text-smaller"><code>.tr.default</code></div>
+                <div class="tr success">Hello</div>
+                <div class="tr text-smaller"><code>.tr.success</code></div>
+              </div>
+            </div>
+            <div class="col-8-16">
+              <h3>&nbsp;<p class="tagline">Has <code>.hover</code> applied</p></h3>
+              <div class="table hover demotable">
+                <div class="tr danger">Oh no! <a href="#">Link test!</a></div>
+                <div class="tr text-smaller"><code>.tr.danger</code></div>
+                <div class="tr warning">Look out!</div>
+                <div class="tr text-smaller"><code>.tr.warning</code></div>
+                <div class="tr"><i>That's all, folks</i></div>
+                <div class="tr default text-subtle text-smaller">Good job. You've done well. Keep it up. Wow.</div>
+              </div>
+            </div>
+            <div class="col-16-16">
+              <h3>Stick a grid in there <p class="tagline">This makes use of the grid and has the <code>.hover-alt</code> class applied to it</p></h3>
+              <!-- .demotable just adds some padding -->
+              <div class="table hover-alt demotable">
+                <div class="tr info">
+                  <div class="grid">
+                    <div class="col-4-16 strong">Last</div>
+                    <div class="col-4-16 strong">First</div>
+                    <div class="col-4-16 strong">City</div>
+                    <div class="col-4-16 strong">State</div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="grid">
+                    <div class="col-4-16">Williams</div>
+                    <div class="col-4-16">Ryan</div>
+                    <div class="col-4-16">Aberdeen</div>
+                    <div class="col-4-16">Washington</div>
+                  </div>
+                </div>
+                <div class="tr danger">
+                  <div class="grid">
+                    <div class="col-4-16">Moore</div>
+                    <div class="col-4-16">Matt</div>
+                    <div class="col-4-16">Springdale</div>
+                    <div class="col-4-16">Arkansas</div>
+                  </div>
+                </div>
+                <div class="tr danger">
+                  <div class="grid">
+                    <div class="col-4-16">Stevenson</div>
+                    <div class="col-4-16">David</div>
+                    <div class="col-4-16">Altamont</div>
+                    <div class="col-4-16">Illinois</div>
+                  </div>
+                </div>
+                <div class="tr danger">
+                  <div class="grid">
+                    <div class="col-4-16">Lee</div>
+                    <div class="col-4-16">James</div>
+                    <div class="col-4-16">Casper</div>
+                    <div class="col-4-16">Wyoming</div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="grid">
+                    <div class="col-4-16">Pyers</div>
+                    <div class="col-4-16">Jonathan</div>
+                    <div class="col-4-16">Stockton</div>
+                    <div class="col-4-16">California</div>
+                  </div>
+                </div>
+                <div class="tr default text-smaller text-subtle">
+                  Showing 1 - 5 of 5
+                  <span class="float-right"><a href="#">Action</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-4-12">
-        <h3><code>pre</code></h3>
-        <pre><code>#header h1 a {
-      display: block;
-      width: 300px;
-      height: 80px;
-    }</code></pre>
-      </div>
-      <div class="col-4-12">
-        <h3>Text alignment</h3>
-        <span class="text-left block"><code>.text-left</code></span>
-        <span class="text-center block"><code>.text-center</code></span>
-        <span class="text-right block"><code>.text-right</code></span>
-      </div>
-      <div class="col-4-12">
-        <h3><code>.stretch</code><p class="tagline">This simply applies <code>width:100%;</code></p></h3>
-        <span class="btn btn-warning">Not stretched</span>
-        <br/>
-        <br/>
-        <span class="btn btn-success stretch">Stretched</span>
-      </div>
-    </div>
-    <h3><code>.block</code> and <code>.inline-block</code></h3>
-    <span class="btn btn-primary block">.block</span>
+    </main>
     <br/>
-    <span class="btn btn-default inline-block">.inline-block</span>
-    <span class="btn btn-danger inline-block">.inline-block</span>
-
-    <div class="bigspacer"></div>
-
-
-
-
-
-
-
-    <h2>Tables <p class="tagline">Shhh.. <small>They aren't really tables</small></p></h2>
-    <div class="grid grid-pad-col-20">
-
-      <div class="col-8-16">
-        <h3>Colors</h3>
-        <div class="table demotable">
-          <div class="tr info">Hey!</div>
-          <div class="tr text-smaller"><code>.tr.info</code></div>
-          <div class="tr default">Hi.</div>
-          <div class="tr text-smaller"><code>.tr.default</code></div>
-          <div class="tr success">Nice!</div>
-          <div class="tr text-smaller"><code>.tr.success</code></div>
-        </div>
-      </div>
-      <div class="col-8-16">
-        <h3>More colors</h3>
-        <div class="table demotable">
-
-          <div class="tr danger">Oh no! <a href="#">Link test!</a></div>
-          <div class="tr text-smaller"><code>.tr.danger</code></div>
-          <div class="tr warning">Look out!</div>
-          <div class="tr text-smaller"><code>.tr.warning</code></div>
-          <div class="tr"><i>That's all, folks</i></div>
-          <div class="tr default text-subtle text-smaller">Good job. You've done well. Keep it up. Wow.</div>
-        </div>
-      </div>
-
-      <div class="col-16-16">
-        <h3>Stick a grid in there <p class="tagline">This makes use of the grid and has the <code>.hover</code> class applied to it</p></h3>
-
-        <!-- .demotable just adds some padding -->
-        <div class="table hover-alt demotable">
-          <div class="tr info">
-            <div class="grid">
-              <div class="col-4-16 strong">Last</div>
-              <div class="col-4-16 strong">First</div>
-              <div class="col-4-16 strong">City</div>
-              <div class="col-4-16 strong">State</div>
-            </div>
-          </div>
-          <div class="tr">
-            <div class="grid">
-              <div class="col-4-16">Williams</div>
-              <div class="col-4-16">Ryan</div>
-              <div class="col-4-16">Aberdeen</div>
-              <div class="col-4-16">Washington</div>
-            </div>
-          </div>
-          <div class="tr danger">
-            <div class="grid">
-              <div class="col-4-16">Moore</div>
-              <div class="col-4-16">Matt</div>
-              <div class="col-4-16">Springdale</div>
-              <div class="col-4-16">Arkansas</div>
-            </div>
-          </div>
-          <div class="tr danger">
-            <div class="grid">
-              <div class="col-4-16">Stevenson</div>
-              <div class="col-4-16">David</div>
-              <div class="col-4-16">Altamont</div>
-              <div class="col-4-16">Illinois</div>
-            </div>
-          </div>
-          <div class="tr danger">
-            <div class="grid">
-              <div class="col-4-16">Lee</div>
-              <div class="col-4-16">James</div>
-              <div class="col-4-16">Casper</div>
-              <div class="col-4-16">Wyoming</div>
-            </div>
-          </div>
-          <div class="tr">
-            <div class="grid">
-              <div class="col-4-16">Pyers</div>
-              <div class="col-4-16">Jonathan</div>
-              <div class="col-4-16">Stockton</div>
-              <div class="col-4-16">California</div>
-            </div>
-          </div>
-          <div class="tr default text-smaller text-subtle">
-            Showing 1 - 5 of 5
-            <span class="float-right"><a href="#">Action</a></span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </main>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-</body>
-
+    <br/>
+    <br/>
+    <br/>
+  </body>
 </html>
