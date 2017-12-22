@@ -50,11 +50,14 @@
     &:after {
       @include gradient-side-borders($color-top-border, $color-bottom-border);
     }
+    &:hover {
+	@include gradient-vertical(lighten($color-light, 1.5%), lighten($color-dark, 1.5%));
+    }
     &:active {
       border-top-color: darken($color-top-border, 11%) !important;
       border-bottom-color: darken($color-bottom-border, 0%) !important;
-      @include box-shadow(0, 0, 7px, darken($color-dark,5%),true);
-      @include gradient-vertical(darken($color-light,3%), darken($color-dark,1.5%));
+      @include box-shadow(0, 0, 8px, darken($color-dark, 8%), true);
+      @include gradient-vertical(darken($color-light, 7%), darken($color-dark, 1.5%));
       &:before,
       &:after {
         @include gradient-side-borders(darken($color-top-border, 10%), darken($color-bottom-border, 5%));
@@ -84,17 +87,18 @@
 }
 /// @name outline-button
 /// @author nvms
-@mixin outline-button($selector, $color) {
+@mixin outline-button($selector, $borcolor, $bgcol: #ffffff, $fontcol: #999) {
   .btn#{$selector} {
-    border: 1px solid $color;
-    color: $color;
-    -webkit-box-shadow: 0 4px 6px -5px #bbb;
+    border: 1px solid lighten($borcolor, 20%);
+    color: lighten($borcolor, 20%);
+    box-shadow: 0 4px 6px -5px #bbb;
     &:hover {
-      color: darken($color,10%);
-      border-color: darken($color,5%);
+      color: lighten($borcolor, 10%);
+      border-color: lighten($borcolor, 10%);
     }
     &:active {
-      @include box-shadow(0, 0, 3px, rgba(desaturate(lighten($color,5%), 20), 0.5), true);
+      @include box-shadow(0, 0, 5px, rgba(desaturate(lighten($borcolor, 5%), 20), 0.75), true);
+      @include gradient-vertical(lighten($borcolor, 55%), lighten($borcolor, 55%));
     }
   }
 }

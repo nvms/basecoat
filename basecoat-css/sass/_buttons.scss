@@ -43,7 +43,7 @@
   font-size: 110%;
 }
 /* buttons ********************************************************************/
-@include outline-button(".btn-outline-default", #999);
+@include outline-button(".btn-outline-default", #6a6a6a, #fff, #222);
 @include outline-button(".btn-outline-primary", $color-btn-primary-dark);
 @include outline-button(".btn-outline-success", $color-btn-success-dark);
 @include outline-button(".btn-outline-warning", $color-btn-warning-dark);
