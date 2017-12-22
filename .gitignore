@@ -1,2 +1,4 @@
 node_modules
 .DS_Store
+css/maps
+package-lock.json
