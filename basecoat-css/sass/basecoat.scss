@@ -66,6 +66,17 @@ code {
     color: #fff;
   }
 }
+
+.utilgrid {
+  margin: 15px -3px 20px;
+  & [class*="col-"] {
+    // text-align: center;
+    padding: 5px;
+    // background-color: #fff;
+    // border: 3px solid white;
+    // color: #fff;
+  }
+}
 .grid-pad-col-20 {
   & > [class*="col-"] {
     padding: 1em;
