@@ -494,6 +494,10 @@ dl dt {
   position: fixed;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
 .grid {
   position: relative;
 }
