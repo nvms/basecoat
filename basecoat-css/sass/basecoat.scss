@@ -1,13 +1,11 @@
 // https://github.com/JohnAlbin/normalize-scss
 @import 'normalize';
-@include normalize();
-// core
+@include normalize(); // core
 @import 'colors';
 @import 'mixins';
 @import 'utility'; // pre, hr, ul, ol, dd, things like that
 // grid and page structure
-@import 'grid';
-// styled patterns and elements
+@import 'grid'; // styled patterns and elements
 @import 'type';
 @import 'tooltips';
 @import 'buttons';
@@ -17,11 +15,5 @@
 @import 'anchor';
 @import 'table';
 @import 'nav';
-
-
-
-
-
-
 // demo-specific stuff
 @import 'demo';

@@ -1,16 +1,20 @@
 // color: darken(#BEC8DB, 20%);
+
 nav {
   line-height: 50px;
   background-color: $color-nav-background;
   font-size: 90%;
+
   &.fixed {
     position: fixed;
-    z-index:10;
-    width:100%;
+    z-index: 10;
+    width: 100%;
   }
+
   & ul {
     margin: 0;
     padding: 0;
+
     li {
       &.brand {
         // font-weight: bold;
@@ -21,14 +25,17 @@ nav {
       }
       list-style-type: none;
       display: inline-block;
+
       a {
         display: block;
         margin: 0;
         padding: 16px 17px;
         color: $color-nav-link;
+
         &:hover {
           color: darken($color-nav-link, 20%);
         }
+
         &.active {
           background-color: $color-nav-link-active-bg;
           color: darken($color-nav-link, 20%);
@@ -36,6 +43,7 @@ nav {
       }
     }
   }
+
   & .container-full ul {
     margin: 0;
   }

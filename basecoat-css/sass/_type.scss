@@ -4,39 +4,51 @@ html {
   color: #444;
   zoom: 1;
 }
+
 body {
   font-size: 100%;
 }
+
 .strong {
   font-weight: bold !important;
 }
+
 .underline {
   text-decoration: underline !important;
 }
+
 .text-smaller {
   font-size: smaller;
 }
+
 .text-larger {
   font-size: larger;
 }
+
 .text-subtle {
   color: $color-subtle;
 }
+
 .text-primary {
   color: $color-primary !important;
 }
+
 .text-info {
   color: $color-info;
 }
+
 .text-success {
   color: $color-success;
 }
+
 .text-warning {
   color: $color-warning;
 }
+
 .text-danger {
   color: $color-danger;
 }
+
 h1 > .tagline,
 h2 > .tagline,
 h3 > .tagline,
@@ -49,6 +61,7 @@ h6 > .tagline {
   font-size: 70%;
   line-height: 100%;
 }
+
 h1 > .tagline2,
 h2 > .tagline2,
 h3 > .tagline2,

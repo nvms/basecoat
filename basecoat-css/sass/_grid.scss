@@ -1,17 +1,19 @@
 $totalCols: 16;
 $twelveCols: 12;
+
 .grid {
   position: relative;
   @include clearfix;
+
   .row {
     @include clearfix;
     @media screen and (min-width: 768px) {
       margin-bottom: 1em;
     }
   }
+
   [class*="col-"] {
     float: left;
-    // padding: 1em;
     width: 100%;
     min-height: 1px;
     position: relative;
@@ -22,7 +24,6 @@ $twelveCols: 12;
       @media screen and (min-width: 600px) {
         width: 50%;
       }
-      // at a width of at least 768
       @media screen and (min-width: 768px) {
         width: 100% / $totalCols * $i;
       }
@@ -34,7 +35,6 @@ $twelveCols: 12;
       @media screen and (min-width: 600px) {
         width: 50%;
       }
-      // at a width of at least 768
       @media screen and (min-width: 768px) {
         width: 100% / $twelveCols * $i;
       }

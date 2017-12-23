@@ -18,13 +18,15 @@
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
   }
+
   &:after {
     right: 0;
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
   }
-  &:before,
-  &:after {
+
+  &:after,
+  &:before {
     content: "";
     position: absolute;
     top: -.1rem;
@@ -34,19 +36,20 @@
     margin-bottom: 0.175rem;
   }
 }
+
 .btn-sm {
-    padding: 4px 13px 6px;
-    font-size: 90%;
+  padding: 4px 13px 6px;
+  font-size: 90%;
 }
 
 .btn-md {
-    padding: 7px 12px 9px;
-    font-size: 90%;
+  padding: 7px 12px 9px;
+  font-size: 90%;
 }
 
 .btn-lg {
-    padding: 10px 20px 12px;
-    font-size: 110%;
+  padding: 10px 20px 12px;
+  font-size: 110%;
 }
 /* buttons ********************************************************************/
 // outline-button('selector', border_col, bg_col, font_col)
@@ -56,14 +59,12 @@
 @include outline-button(".btn-outline-success", $color-btn-success-dark);
 @include outline-button(".btn-outline-warning", $color-btn-warning-dark);
 @include outline-button(".btn-outline-danger", $color-btn-danger-dark);
-
 @include standard-button(".btn-default", $color-btn-default-light, $color-btn-default-dark, $color-btn-default-top-border, $color-btn-default-bottom-border, #646464, #bbb);
 @include standard-button(".btn-primary", $color-btn-primary-light, $color-btn-primary-dark, $color-btn-primary-top-border, $color-btn-primary-bottom-border);
 @include standard-button(".btn-purple", $color-btn-purple-light, $color-btn-purple-dark, $color-btn-purple-top-border, $color-btn-purple-bottom-border);
 @include standard-button(".btn-success", $color-btn-success-light, $color-btn-success-dark, $color-btn-success-top-border, $color-btn-success-bottom-border);
 @include standard-button(".btn-warning", $color-btn-warning-light, $color-btn-warning-dark, $color-btn-warning-top-border, $color-btn-warning-bottom-border);
 @include standard-button(".btn-danger", $color-btn-danger-light, $color-btn-danger-dark, $color-btn-danger-top-border, $color-btn-danger-bottom-border);
-
 @include flat-button('.btn-flat-default', $color-btn-default-light, $color-btn-default-dark, $color-btn-default-top-border, $color-btn-default-bottom-border, #646464, #bbb);
 @include flat-button('.btn-flat-primary', $color-btn-primary-light, $color-btn-primary-dark, $color-btn-primary-top-border, $color-btn-primary-bottom-border);
 @include flat-button('.btn-flat-purple', $color-btn-purple-light, $color-btn-purple-dark, $color-btn-purple-top-border, $color-btn-purple-bottom-border);

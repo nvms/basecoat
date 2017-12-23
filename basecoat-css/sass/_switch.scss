@@ -1,5 +1,6 @@
 $sw-height: 20px;
 $sw-width: 50px;
+
 input {
   &.sw {
     opacity: 0;
@@ -47,9 +48,10 @@ input {
       }
       /* in the off state, this is the same switch handle when it is active (being clicked) */
       &:active:after {
-        width:30px;
+        width: 30px;
         background: darken(rgb(214, 214, 214), 10%);
       }
+
       span {
         white-space: nowrap;
         height: $sw-height;
@@ -58,6 +60,7 @@ input {
         padding-left: 16px;
       }
     }
+
     &:checked {
       /* this is the color of the track when the switch is in the on position */
       & + label:before {

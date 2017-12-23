@@ -1,16 +1,18 @@
 @mixin demo-head-vertical-gradient {
   background-color: #9A8B9C;
   background: linear-gradient(to bottom, darken(#fff, 13%) 0%, darken(#fff, 4%) 90%);
-  //E8654E
 }
+
 .container {
   width: 1024px;
   margin: 0 auto;
 }
+
 .container-full {
   width: 100%;
   margin: 0 auto;
 }
+
 :not(pre) > code,
 code {
   color: #da5f5b;
@@ -18,6 +20,7 @@ code {
   padding: 0 5px;
   border-radius: 5px;
 }
+
 .note {
   padding: 0 20px;
   border: 1px solid #eee;
@@ -25,17 +28,19 @@ code {
   border-radius: 3px;
   text-align: center;
   margin-bottom: 50px;
+
   & pre {
     border: 0;
     float: left;
     text-align: left;
     border-right: 1px solid #eee;
     margin: 0 0 0 -20px;
-    // padding: 0;
   }
 }
+
 .demogrid {
   margin: 30px -3px 20px;
+
   & [class*="col-"] {
     text-align: center;
     padding: 1em;
@@ -47,48 +52,51 @@ code {
 
 .utilgrid {
   margin: 15px -3px 20px;
-  & > [class*="col-"] { // added '>' so it does not affect new grids below this parent utilgrid
-    // text-align: center;
+
+  & > [class*="col-"] {
+    // added '>' so it does not affect new grids below this parent utilgrid
     padding: 5px;
-    // background-color: #fff;
-    // border: 3px solid white;
-    // color: #fff;
   }
 }
+
 .grid-pad-col-20 {
   & > [class*="col-"] {
     padding: 1em;
   }
 }
+
 .demospacer {
   height: 20px;
   display: block;
   clear: both;
 }
+
 .bigspacer {
-  height:2px;
-  width:100%;
-  background-color:#f5f5f5;
-  margin-top:100px;
-  margin-bottom:100px;
+  height: 2px;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: block;
   clear: both;
 }
+
 .demotable {
   & .tr {
-    padding: 6px 6px;
+    padding: 6px;
   }
 }
 
 fixed-nav {
   position: fixed;
-  width:200px;
+  width: 200px;
   // border-right:1px solid #eee;
   & ul {
-    margin-top:10px;
-    list-style-type:none;
-    font-size:92%;
-    padding:0;
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 92%;
+    padding: 0;
+
     & li {
       & > [class*="active"] {
         // border-left:2px solid #F0C9CA;
@@ -96,17 +104,21 @@ fixed-nav {
         // background-color:#fafafa;
         // color:#333;
       }
+
       & a {
-        padding:2px 0 3px 5px;
-        display:block;
-        color:#aaa;
+        padding: 2px 0 3px 5px;
+        display: block;
+        color: #aaa;
+
         &:hover {
-          color:darken(#333, 20%);
+          color: darken(#333, 20%);
           // border-left:2px solid #F0C9CA;
         }
       }
+
       & ul {
         margin: 0 0 0 15px;
+
         & li {
           padding: 0;
           margin: 0;
@@ -116,48 +128,43 @@ fixed-nav {
   }
 }
 
-
 h1:not(.not-demo) {
-  margin-top:0px;
-  border-bottom:1px solid #eee;
-  padding-bottom:15px;
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
 }
 
 .el_demo {
-  border:3px solid #efefef;
+  border: 3px solid #efefef;
+
   & > [class*="col-"] {
     padding: 5px;
   }
-  margin-bottom:0;
-  padding-bottom:0;
-  padding:15px;
-  border-top-right-radius:5px;
-  border-top-left-radius:5px;
+  margin-bottom: 0;
+  padding: 15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   // padding:5px;
 }
 
-
 demo {
-  background:#efefef;
-  border-right:3px solid #efefef;
-  border-left:3px solid #efefef;
-  border-bottom:3px solid #efefef;
-  width:100%;
-  padding:20px;
-  border-bottom-left-radius:10px;
-  border-bottom-right-radius:10px;
-
+  background: #efefef;
+  border-right: 3px solid #efefef;
+  border-left: 3px solid #efefef;
+  border-bottom: 3px solid #efefef;
+  width: 100%;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   // @include box-shadow(0, 0, 15px, rgba(0, 0, 0, 0.1), $inset: true);
-
   & pre.demo {
     padding: 0;
     margin: 0;
-    background:transparent;
-    font-size:90%;
+    background: transparent;
+    font-size: 90%;
   }
 }
 
-
 main {
-  padding-bottom:100px;
+  padding-bottom: 100px;
 }

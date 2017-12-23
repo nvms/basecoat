@@ -1,39 +1,43 @@
 .table {
   $border-width: 1px;
+
   & .tr {
     border: 1px solid $color-table-default-border;
     background-color: #fff;
     position: relative;
     z-index: 5;
-    padding:6px;
+    padding: 6px;
   }
+
   & .tr:not(:first-child) {
     margin-top: -#{$border-width};
   }
+
   & :first-child.tr {
     @include border-top-radius(3px);
     border-top-color: $color-table-default-border;
+
     &:not(.tr) {
-      @include border-top-radius(0px);
+      @include border-top-radius(0);
     }
   }
+
   & :last-child {
     @include border-bottom-radius(3px);
     border-bottom-color: $color-table-default-border;
   }
+
   &.hover {
     & .tr:hover {
       // this gets overridden by @mixin table-tr-color for .info .default, etc.
-      background-color:#f5f5f5;
+      background-color: #f5f5f5;
     }
   }
-  &.hover-alt {
-    & .tr:hover {
 
-    }
+  &.hover-alt {
+    & .tr:hover {}
   }
 }
-
 @include table-tr-color(".info", $color-table-info-border, $color-table-info-bg);
 @include table-tr-color(".default", $color-table-default-border, $color-table-default-bg);
 @include table-tr-color(".success", $color-table-success-border, $color-table-success-bg);
