@@ -40,7 +40,7 @@
     }
     &:valid + label {
       font-size: 14px;
-      font-weight: bold;
+      // font-weight: bold;
     }
     &:focus {
       border-color: #51a7e8 !important;
@@ -50,7 +50,7 @@
       & + label {
         color: #51a7e8;
         font-size: 14px;
-        font-weight: bold;
+        // font-weight: bold;
         transform: translate(0px, -18px);
       }
     }
