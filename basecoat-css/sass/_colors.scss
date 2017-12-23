@@ -49,3 +49,9 @@ $color-table-danger-border      : #f2c9c9;
 $color-table-danger-bg          : #fcf2f2;
 $color-table-warning-border     : #ebe5bf;
 $color-table-warning-bg         : #fcfaf2;
+
+/* nav */
+$color-nav-link					: #888888;
+$color-nav-background			: #f8f8f8;
+$color-nav-brand                : darken($color-nav-link, 20%);
+$color-nav-link-active-bg		: #f1f1f1;

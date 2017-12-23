@@ -1,7 +1,7 @@
 // color: darken(#BEC8DB, 20%);
 nav {
   line-height: 50px;
-  background-color: #f8f8f8;
+  background-color: $color-nav-background;
   font-size: 90%;
   &.fixed {
     position: fixed;
@@ -15,7 +15,7 @@ nav {
       &.brand {
         // font-weight: bold;
         font-size: 130%;
-        color: #555;
+        color: $color-nav-brand;
         margin-right: 20px;
         padding: 0 10px 0 0;
       }
@@ -25,12 +25,13 @@ nav {
         display: block;
         margin: 0;
         padding: 16px 17px;
-        color: #888;
+        color: $color-nav-link;
         &:hover {
-          color: #555;
+          color: darken($color-nav-link, 20%);
         }
         &.active {
           background-color: #f1f1f1;
+          color: darken($color-nav-link, 20%);
         }
       }
     }
