@@ -102,7 +102,7 @@
       border-color: lighten($borcolor, 10%);
     }
     &:active {
-      @include box-shadow(0, 0, 5px, rgba(desaturate(lighten($borcolor, 5%), 20), 0.75), true);
+      @include box-shadow(0, 0, 20px, rgba(desaturate(lighten($borcolor, 5%), 20), 0.25), true);
       @include gradient-vertical(lighten($borcolor, 55%), lighten($borcolor, 55%));
     }
   }
