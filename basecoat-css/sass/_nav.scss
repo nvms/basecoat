@@ -30,7 +30,7 @@ nav {
           color: darken($color-nav-link, 20%);
         }
         &.active {
-          background-color: #f1f1f1;
+          background-color: $color-nav-link-active-bg;
           color: darken($color-nav-link, 20%);
         }
       }
