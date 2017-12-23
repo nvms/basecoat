@@ -139,10 +139,15 @@ h1:not(.not-demo) {
 
 demo {
   background:#efefef;
+  border-right:3px solid #efefef;
+  border-left:3px solid #efefef;
+  border-bottom:3px solid #efefef;
   width:100%;
   padding:20px;
-  border-bottom-left-radius:5px;
-  border-bottom-right-radius:5px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+
+  // @include box-shadow(0, 0, 15px, rgba(0, 0, 0, 0.1), $inset: true);
 
   & pre.demo {
     padding: 0;
