@@ -48,6 +48,7 @@ input {
       /* in the off state, this is the same switch handle when it is active (being clicked) */
       &:active:after {
         width:30px;
+        background: darken(rgb(214, 214, 214), 10%);
       }
       span {
         white-space: nowrap;
@@ -72,6 +73,7 @@ input {
       /* this is the switch when it is in the on position and being clicked */
       & + label:active:after {
         left: $sw-width - $sw-height -9;
+        background: darken(rgb(15, 103, 207), 10%);
       }
       /* this is the color of the track to the right of the switch when it is in the on position */
       & + label {
