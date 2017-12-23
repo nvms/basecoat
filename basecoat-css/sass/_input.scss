@@ -39,7 +39,7 @@
       transform: translateY(0);
     }
     &:valid + label {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
     }
     &:focus {
@@ -49,7 +49,7 @@
       // transition: border-color 0.15s linear;
       & + label {
         color: #51a7e8;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
         transform: translate(0px, -18px);
       }
