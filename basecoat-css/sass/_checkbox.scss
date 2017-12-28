@@ -1,0 +1,103 @@
+/*
+author: Dan Philibin (http://danphilibin.com/)
+https://codepen.io/danphilibin/pen/wHnKh
+*/
+
+.icon-check {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20baseProfile%3D%22tiny%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M13.483%201.992l-7.186%207.066-3.778-3.715-2.518%202.475%205.037%204.954%201.259%201.237%209.704-9.541-2.518-2.476z%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
+.checkbox,
+.radio {
+  line-height: 0.9;
+  margin-bottom:6px;
+
+  &.inline {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  label {
+    display: block;
+    @include no-select;
+    cursor: pointer;
+    text-indent: -15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: relative;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    *overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .custom-checkbox,
+  .custom-radio {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 6px 0 0;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 1px solid #bbb;
+    position: relative;
+  }
+}
+
+.checkbox {
+  .custom-checkbox {
+    border-radius: 3px;
+    background: #2095F0;
+    transition: box-shadow 180ms ease;
+    box-shadow: inset 0 0 0 12px #fff;
+    top: -2px;
+  }
+
+  .icon-check {
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transform: scale(0);
+    transition: all 180ms ease;
+  }
+
+  input[type="checkbox"]:checked + .custom-checkbox {
+    border-color: #2095F0;
+    box-shadow: none;
+
+    .icon-check {
+      transform: scale(1);
+    }
+  }
+}
+
+.radio {
+  .custom-radio {
+    border-radius:18px;
+    background:#2095F0;
+    box-shadow:inset 0 0 0 12px #fff;
+    transition:all 180ms ease;
+    top:-2px;
+  }
+
+  input[type="radio"]:checked + .custom-radio {
+    border-color:#2095F0;
+    background:#2095F0;
+    box-shadow:inset 0 0 0 4px #fff;
+  }
+}

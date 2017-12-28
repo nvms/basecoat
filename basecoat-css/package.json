@@ -12,9 +12,11 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
+    "highlights": "^3.1.1",
     "normalize-scss": "^4.0.3",
     "sassdoc": "^2.1.20",
     "support-for": "^1.0.3",
     "table": "^3.7.8"
-  }
+  },
+  "dependencies": {}
 }
