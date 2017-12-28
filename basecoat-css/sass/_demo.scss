@@ -90,7 +90,7 @@ code {
 fixed-nav {
   position: fixed;
   width: 200px;
-  // border-right:1px solid #eee;
+  border-right:1px solid lighten(#1BADB4, 40%);
   & ul {
     margin-top: 10px;
     list-style-type: none;

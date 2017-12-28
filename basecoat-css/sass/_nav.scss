@@ -33,12 +33,12 @@ nav {
         color: $color-nav-link;
 
         &:hover {
-          color: darken($color-nav-link, 20%);
+          color: $color-nav-link-hover;
         }
 
         &.active {
           background-color: $color-nav-link-active-bg;
-          color: darken($color-nav-link, 20%);
+          color: $color-nav-link-active;
         }
       }
     }
