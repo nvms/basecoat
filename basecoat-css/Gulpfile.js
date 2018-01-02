@@ -5,7 +5,6 @@ var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
-var sassdoc = require('sassdoc');
 
 gulp.task('minify-css', function() {
   return gulp.src(['css/*.css', '!css/**/*.min.css'])
@@ -27,7 +26,6 @@ gulp.task('sass', function() {
     }).on('error', sass.logError))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./css'))
-    //.pipe(sassdoc())
     .resume();
 });
 
@@ -35,7 +33,3 @@ gulp.task('sass:watch', ['sass'], function() {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-gulp.task('doc', function() {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sassdoc());
-});
