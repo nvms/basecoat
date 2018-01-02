@@ -160,7 +160,7 @@ $borderRadius: 0.18rem;
     .dropdown.open {
         .dropdown_content ul {
             max-height: 30rem;
-            overflow-y: scroll;
+            //overflow-y: scroll;
             opacity: 1;
         }
     }
