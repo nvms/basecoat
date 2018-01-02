@@ -1,4 +1,4 @@
 node_modules
 .DS_Store
-basecoat-css/css/maps/*
+css/maps/*
 package-lock.json
