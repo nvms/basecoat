@@ -1,0 +1,276 @@
+/* Colors */
+$black: #464646;
+$blackAlpha: rgba(#000, 0.12);
+$lightGray: #cccccc;
+$gray: #868686;
+$darkGray: #666666;
+$red: #e75854;
+$white: #fafafa;
+$darkWhite: #eeeeee;
+
+/* Variables */
+$anim: 100ms ease-in-out;
+$triangleSize: 0.3rem;
+$triangleRatio: 1.2;
+$borderRadius: 0.18rem;
+
+@mixin dropdown-default() {
+    /* Normalize */
+    dl,
+    ul {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-padding-start: 0;
+    }
+
+    dd {
+        -webkit-margin-start: 0;
+    }
+    /* dropdown style */
+    .dropdown {
+        position: relative;
+        // width: 100%;
+        // margin: 0 auto;
+        display: inline-block;
+        // margin-bottom: 1.5em; // Cosmetic value
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        white-space: nowrap;
+    }
+
+    .dropdown_title {
+        position: relative;
+        // display: block;
+        // width: 100%;
+        border-bottom: 1px solid $blackAlpha;
+        text-decoration: none;
+        cursor: pointer;
+
+        span {
+            display: block;
+            // border:1px solid red;
+            padding: 0.5rem 2.5rem 0.5rem 1rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        transition: border-color $anim;
+
+        &:hover {
+            border-color: $gray;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: .9rem;
+            top: 50%;
+            transform: translateY(-50%);
+            border-top: $triangleSize solid $gray;
+            border-left: $triangleSize*$triangleRatio solid transparent;
+            border-right: $triangleSize*$triangleRatio solid transparent;
+        }
+    }
+
+    @each $c in 'primary' 'success' 'warning' 'danger' 'purple' {
+        .dropdown-#{$c} .dropdown_title {
+            border-bottom: 1px solid lighten(map-get($colors, #{$c}), 25%);
+        }
+
+        // not sure if I really like this:
+        // .dropdown-#{$c} .dropdown_content {
+        //     .dropdown_header {
+        //         border-bottom: 1px solid lighten(map-get($colors, #{$c}), 25%);
+        //     }
+        // }
+    }
+
+    .dropdown_content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin:0;
+
+        ul {
+            z-index: 1;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding-left:0;
+            // padding-right:15px;
+            margin-left:0;
+
+            border-radius: $borderRadius;
+            max-height: 0;
+            opacity: 0;
+            transition: opacity $anim, max-height $anim;
+            list-style: none;
+            background: $white;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+            li:first-child a:hover {
+                border-radius: 0.2rem 0.2rem 0 0;
+            }
+
+            li:last-child a {
+                // margin-bottom: 0.5rem;
+
+                &:hover {
+                    border-radius: 0 0 0.2rem 0.2rem;
+                }
+            }
+        }
+
+        li a {
+            // display: block;
+            display:inline-block;
+            padding: 0.5rem 1rem;
+            // font-size: 1.4rem;
+            color: $black;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all $anim, color $anim;
+            text-overflow: ellipsis;
+
+            &:hover {
+                color: $darkGray;
+                background-color: $darkWhite;
+            }
+        }
+
+        .dropdown_header {
+            border-bottom: 1px solid $blackAlpha;
+            // margin-bottom: 0.5rem;
+            padding: 0.5rem 1rem;
+            // font-size: 1.6rem;
+        }
+
+        .selected {
+            // font-weight: 700 !important;
+            color: $red;
+        }
+    }
+
+    .dropdown.open {
+        .dropdown_content ul {
+            max-height: 30rem;
+            overflow-y: scroll;
+            opacity: 1;
+        }
+    }
+
+    .dropdown.dark {
+        .dropdown_title {
+            border-color: $gray;
+            color: $lightGray;
+
+            &:hover {
+                border-color: $lightGray;
+            }
+        }
+    }
+}
+@mixin dropdown-default-btn() {
+    .dropdown {
+        &.btn {
+            margin: 0;
+            padding: 0;
+
+            .dropdown_title {
+                border: 0;
+                text-align: left;
+                top: -1px; // line that shit up just right
+            }
+
+            .dropdown_content {
+                ul {
+                    top: -1px; // because of the button's top border
+                    text-align: left;
+                    li a {
+
+                    }
+                }
+            }
+        }
+
+        &.btn:after, &.btn:before {
+            margin-top: 0.17rem;
+        }
+
+        // set item hover color based on what type of button it is
+        @each $c in 'primary' 'success' 'warning' 'danger' 'purple' {
+            &.btn.btn-#{$c},
+            &.btn.btn-flat-#{$c},
+            &.btn.btn-outline-#{$c} {
+                .dropdown_content {
+                    ul {
+                        li {
+                            a {
+                                &:hover {
+                                    background-color:lighten(map-get($colors, #{$c}), 10%);
+                                    color:white;
+                                }
+                            }
+                        }
+                    }
+                    .selected {
+                        color: map-get($colors, #{$c});
+                    }
+                }
+            }
+        }
+
+        // by default, all dropdowns with .btn on them get a white arrow
+        &.btn .dropdown_title {
+            &:after {
+                border-top: $triangleSize solid white;
+                border-left: $triangleSize*$triangleRatio solid transparent;
+                border-right: $triangleSize*$triangleRatio solid transparent;
+            }
+        }
+
+        // the btn*-default class should get a gray arrow.. it just looks better
+        // btn-outline-default will be the exception to this rule
+        &.btn.btn-default .dropdown_title,
+        &.btn.btn-flat-default .dropdown_title {
+            &:after {
+                border-top: $triangleSize solid $gray;
+                border-left: $triangleSize*$triangleRatio solid transparent;
+                border-right: $triangleSize*$triangleRatio solid transparent;
+            }
+        }
+
+        // all outline buttons get a gray arrow for obvious reasons :)
+        @each $t in 'default' 'primary' 'success' 'warning' 'danger' 'purple' {
+            &.btn.btn-outline-#{$t} {
+                .dropdown_content {
+                    left:-1px;
+                    right:-1px;
+                }
+                &:after {
+                    border-top: $triangleSize solid $gray;
+                    border-left: $triangleSize*$triangleRatio solid transparent;
+                    border-right: $triangleSize*$triangleRatio solid transparent;
+                }
+            }
+
+            // I honestly can't figure out why this shit is necessary..
+            &.btn.btn-outline-#{$t}:after,
+            &.btn.btn-outline-#{$t}:before {
+                top:1rem;
+                border-top-right-radius:0rem;
+                right:0.8rem;
+            }
+        }
+    }
+}
+
+
+@include dropdown-default();
+@include dropdown-default-btn();

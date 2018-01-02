@@ -6,11 +6,12 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Basecoat ♥️</title>
 		<link rel="stylesheet" href="css/basecoat.css">
+		<link rel="stylesheet" href="css/atom-dark-syntax.css">
 
 		<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 		<script src="js/basecoat.js" type="text/javascript"></script>
 		<script type="text/javascript">
-			$('body').wave();
+
 		</script>
 	</head>
 	<body>
@@ -18,7 +19,7 @@
 			<div class="container">
 				<ul>
 					<li class="brand">Basecoat</li>
-					<li><a href="about.html">About</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="css.html">CSS</a></li>
 					<li><a href="components.html">Components</a></li>
 					<li><a href="javascript.html" class="active">JavaScript</a></li>
@@ -27,12 +28,428 @@
 		</nav>
 		<main class="container" role="main">
 			<div class="grid">
-				<div class="col-12-12">
+				<div class="col-3-16">
 					<div class="demospacer"></div>
 					<div class="demospacer"></div>
 					<div class="demospacer"></div>
 					<div class="demospacer"></div>
-					<p>Coming soon.</p>
+					<fixed-nav>
+					<ul>
+						<li>
+							<a href="#" class="active">Dropdowns</a>
+							<ul>
+								<li><a href="#" class="active">Standard</a></li>
+								<li><a href="#">Alternative stylings</a></li>
+								<li><a href="#">Retrieving data</a></li>
+							</ul>
+						</li>
+					</ul>
+					</fixed-nav>
+				</div>
+				<div class="col-1-16">&nbsp;</div>
+				<div class="col-12-16">
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+					<div class="demospacer"></div>
+
+					<h1>Dropdowns</h1>
+
+					<div class="grid">
+						<div class="col-16-16">
+
+
+							<h3>Standard</h3>
+							<p>Below is an example of what will be referred to as a <i>standard</i> dropdown. It does not include any alternative styling as the examples further down the page do.</p>
+							<div class="el_demo">
+								<dl class="dropdown">
+							      <dt class="dropdown_title"><span>Dropdown</span></dt>
+							      <dd class="dropdown_content">
+							        <ul>
+							          <li><a class="dropdown_header">Dropdown</a></li>
+							          <li><a data-value="opt1">Option 1</a></li>
+							          <li><a data-value="opt2">Option 2</a></li>
+							          <li><a data-value="opt3">Option 3</a></li>
+							        </ul>
+							      </dd>
+							      <input type="hidden" name="demo_1">
+							    </dl>
+								<dl class="dropdown">
+							      <dt class="dropdown_title"><span>Dropdown 2</span></dt>
+							      <dd class="dropdown_content">
+							        <ul>
+							          <li><a class="dropdown_header">Dropdown 2</a></li>
+							          <li><a>Option 1</a></li>
+							          <li><a>Option 2 is exceptionally long, so the dropdown adjusts accordingly</a></li>
+							          <li><a>Option 3</a></li>
+							        </ul>
+							      </dd>
+							      <input type="hidden" name="demo_2">
+							    </dl>
+							</div>
+
+							<div class="col-16-16">
+								<demo class="block">
+                  					<pre class="editor editor-colors"><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dl</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dt</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_title</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Dropdown</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dt</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dd</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_content</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_header</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Dropdown</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt1</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Option&nbsp;1</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt2</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Option&nbsp;2</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt3</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Option&nbsp;3</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dd</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>hidden</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>name</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>demo_standard</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dl</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+								</demo>
+							</div>
+
+
+
+						</div> <!-- end col-16-16 -->
+					</div> <!-- end grid -->
+
+					<div class="grid">
+						<div class="col-16-16">
+							<h3>Alternative stylings</h3>
+							<p>In addition to the standard dropdown, you can add <code>.dropdown-primary</code>, <code>.dropdown-success</code>, <code>.dropdown-warning</code>, <code>.dropdown-danger</code> and <code>.dropdown-purple</code> for additional, subtle styling.</p>
+
+							<div class="el_demo">
+								<dl class="dropdown dropdown-primary">
+								  <dt class="dropdown_title"><span>Primary</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Primary</a></li>
+									  <li><a data-value="ex"><code>.dropdown-primary</code></a></li>
+									  <li><a data-value="hello">Hello</a></li>
+									  <li><a data-value="world">World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_3">
+								</dl>
+
+								<!-- the following is for demonstrational purposes only, so the data-value attributes are omitted because they are useless in this sense -->
+								<dl class="dropdown dropdown-success">
+								  <dt class="dropdown_title"><span>Success</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Success</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_4">
+								</dl>
+
+								<dl class="dropdown dropdown-warning">
+								  <dt class="dropdown_title"><span>Warning</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Warning</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_5">
+								</dl>
+
+								<dl class="dropdown dropdown-danger">
+								  <dt class="dropdown_title"><span>Danger</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Danger</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_6">
+								</dl>
+
+								<dl class="dropdown dropdown-purple">
+								  <dt class="dropdown_title"><span>Purple</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Purple</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_6">
+								</dl>
+
+							</div> <!-- end el_demo -->
+
+							<div class="col-16-16">
+
+									<demo class="block">
+										<pre class="editor editor-colors"><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dl</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown&nbsp;dropdown-primary</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dt</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_title</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dt</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dd</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_content</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_header</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>ex</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>code</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>.dropdown-primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>code</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>hello</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Hello</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>world</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>World</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dd</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>hidden</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>name</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>demo_alt</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dl</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+									</demo>
+
+							</div> <!-- end col-16-16 -->
+
+						</div> <!-- end col-16-16 -->
+					</div> <!-- end grid -->
+
+					<div class="grid">
+						<div class="col-16-16">
+							<h3>Button stylings</h3>
+							<p>Dropdowns can also adopt styles from all of the standard, flat, and outline buttons.</p>
+
+							<div class="el_demo">
+
+								<dl class="dropdown btn btn-default">
+								  <dt class="dropdown_title"><span>Default</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Default</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_12">
+								</dl>
+
+								<dl class="dropdown btn btn-primary">
+								  <dt class="dropdown_title"><span>Primary</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Primary</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>Here's an extra long menu item</a></li>
+									  <li><a>Hi</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_7">
+								</dl>
+
+								<dl class="dropdown btn btn-success">
+								  <dt class="dropdown_title"><span>Success</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Success</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_8">
+								</dl>
+
+								<dl class="dropdown btn btn-warning">
+								  <dt class="dropdown_title"><span>Warning</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Warning</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_9">
+								</dl>
+
+								<dl class="dropdown btn btn-danger">
+								  <dt class="dropdown_title"><span>Danger</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Danger</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_10">
+								</dl>
+
+								<dl class="dropdown btn btn-purple">
+								  <dt class="dropdown_title"><span>Purple</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Purple</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_11">
+								</dl>
+
+								<br/>
+
+								<dl class="dropdown btn btn-flat-default">
+								  <dt class="dropdown_title"><span>Default</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Default</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_12">
+								</dl>
+
+								<dl class="dropdown btn btn-flat-primary">
+								  <dt class="dropdown_title"><span>Primary</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Primary</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>Here's an extra long menu item</a></li>
+									  <li><a>Hi</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_7">
+								</dl>
+
+								<dl class="dropdown btn btn-flat-success">
+								  <dt class="dropdown_title"><span>Success</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Success</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_8">
+								</dl>
+
+								<dl class="dropdown btn btn-flat-warning">
+								  <dt class="dropdown_title"><span>Warning</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Warning</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_9">
+								</dl>
+
+								<dl class="dropdown btn btn-flat-danger">
+								  <dt class="dropdown_title"><span>Danger</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Danger</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_10">
+								</dl>
+
+								<dl class="dropdown btn btn-flat-purple">
+								  <dt class="dropdown_title"><span>Purple</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Purple</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_11">
+								</dl>
+
+								<br/>
+
+								<dl class="dropdown btn btn-outline-default">
+								  <dt class="dropdown_title"><span>Default</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Default</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_12">
+								</dl>
+
+								<dl class="dropdown btn btn-outline-primary">
+								  <dt class="dropdown_title"><span>Primary</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Primary</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>Here's an extra long menu item</a></li>
+									  <li><a>Hi</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_7">
+								</dl>
+
+								<dl class="dropdown btn btn-outline-success">
+								  <dt class="dropdown_title"><span>Success</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Success</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_8">
+								</dl>
+
+								<dl class="dropdown btn btn-outline-warning">
+								  <dt class="dropdown_title"><span>Warning</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Warning</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_9">
+								</dl>
+
+								<dl class="dropdown btn btn-outline-danger">
+								  <dt class="dropdown_title"><span>Danger</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Danger</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_10">
+								</dl>
+
+								<dl class="dropdown btn btn-outline-purple">
+								  <dt class="dropdown_title"><span>Purple</span></dt>
+								  <dd class="dropdown_content">
+									<ul>
+									  <li><a class="dropdown_header">Purple</a></li>
+									  <li><a>Hello</a></li>
+									  <li><a>World</a></li>
+									</ul>
+								  </dd>
+								  <input type="hidden" name="demo_11">
+								</dl>
+
+							</div> <!-- end el_demo -->
+
+							<div class="col-16-16">
+
+									<demo class="block">
+										<pre class="editor editor-colors"><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dl</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown&nbsp;btn&nbsp;btn-primary</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dt</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_title</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dt</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dd</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_content</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_header</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt1</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Hello</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt2</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Here&#39;s&nbsp;an&nbsp;extra&nbsp;long&nbsp;menu&nbsp;item</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt3</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Hi</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dd</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>hidden</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>name</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>demo_btn_primary</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dl</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;</span></span></div><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dl</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown&nbsp;btn&nbsp;btn-flat-primary</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dt</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_title</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dt</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dd</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_content</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_header</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt1</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Hello</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt2</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Here&#39;s&nbsp;an&nbsp;extra&nbsp;long&nbsp;menu&nbsp;item</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt3</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Hi</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dd</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>hidden</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>name</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>demo_btn_flat_primary</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dl</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;</span></span></div><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dl</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown&nbsp;btn&nbsp;btn-outline-primary</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dt</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_title</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dt</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>dd</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_content</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>dropdown_header</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Primary</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt1</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Hello</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt2</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Here&#39;s&nbsp;an&nbsp;extra&nbsp;long&nbsp;menu&nbsp;item</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>a</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>data-value</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>opt3</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Hi</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>a</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dd</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>hidden</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>name</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>demo_btn_outline_primary</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag  any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag  any html"><span>dl</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+									</demo>
+
+							</div> <!-- end col-16-16 -->
+
+						</div> <!-- end col-16-16 -->
+					</div> <!-- end grid -->
+
+					<div class="grid">
+						<div class="col-16-16">
+							<h3>Retrieving data from dropdowns</h3>
+							<p>When a dropdown value is changed by a click, the <code>input</code> element embedded inside the dropdown has its value updated to reflect the <code>data-value</code> attribute of the selected item. You can then proceed to pull that value from the input by referencing it by <code>id</code> or <code>name</code> as you traditionally would. This works much like pulling data from an input field, because that's exactly what you're doing.</p>
+
+							<!-- <div class="el_demo">
+
+							</div>
+
+							<div class="col-16-16">
+
+									<demo class="block">
+
+									</demo>
+
+							</div> -->
+
+						</div> <!-- end col-16-16 -->
+					</div> <!-- end grid -->
+
+
+
+
+
+
+
+
 				</div>
 			</div>
 		</main>

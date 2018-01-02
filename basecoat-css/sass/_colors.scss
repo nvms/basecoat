@@ -1,3 +1,5 @@
+
+
 /**/
 $color-subtle: #c0c0c0;
 $color-primary: #1981fb;
@@ -56,5 +58,17 @@ $color-nav-brand: darken($color-nav-link, 20%);
 $color-nav-link-active-bg: #e8e8e8;
 $color-nav-link-hover: darken($color-nav-link, 20%);
 $color-nav-link-active: darken($color-nav-link, 20%);
+
+
+
+$colors: (
+    "default": $color-btn-default-dark,
+    "primary": $color-btn-primary-dark,
+    "success": $color-btn-success-dark,
+    "warning": $color-btn-warning-dark,
+    "danger": $color-btn-danger-dark,
+    "purple": $color-btn-purple-dark
+);
+
 /* theme */
 @import 'theme';

@@ -13,157 +13,89 @@
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
 }
 @mixin gradient-side-borders($start-color: #555, $end-color: #333) {
-  background-image: -webkit-linear-gradient($start-color, $end-color);
-  background-image: -moz-linear-gradient($start-color, $end-color);
-  background-image: -o-linear-gradient($start-color, $end-color);
-  background-image: linear-gradient($start-color, $end-color);
+    background-image: -webkit-linear-gradient($start-color, $end-color);
+    background-image: -moz-linear-gradient($start-color, $end-color);
+    background-image: -o-linear-gradient($start-color, $end-color);
+    background-image: linear-gradient($start-color, $end-color);
 }
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
-  @if $inset {
-    -webkit-box-shadow: inset $top $left $blur $color !important;
-    -moz-box-shadow: inset $top $left $blur $color !important;
-    box-shadow: inset $top $left $blur $color !important;
-  }
-  @else {
-    -webkit-box-shadow: $top $left $blur $color !important;
-    -moz-box-shadow: $top $left $blur $color !important;
-    box-shadow: $top $left $blur $color !important;
-  }
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color !important;
+        -moz-box-shadow: inset $top $left $blur $color !important;
+        box-shadow: inset $top $left $blur $color !important;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $color !important;
+        -moz-box-shadow: $top $left $blur $color !important;
+        box-shadow: $top $left $blur $color !important;
+    }
 }
 @mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 @mixin no-select {
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-/// @name standard-button
-/// @author nvms
-@mixin standard-button($selector, $color-light, $color-dark, $color-top-border, $color-bottom-border, $font-color: #fff, $shadow-color: #555) {
-  .btn#{$selector} {
-    border-top: 1px solid $color-top-border !important;
-    border-bottom: 1px solid $color-bottom-border !important;
-    box-shadow: 0 4px 6px -5px $shadow-color !important;
-    @include gradient-vertical($color-light, $color-dark);
-    color: $font-color !important;
-    &:before,
-    &:after {
-      @include gradient-side-borders($color-top-border, $color-bottom-border);
-    }
-    &:hover {
-	    @include gradient-vertical(lighten($color-light, 1.5%), lighten($color-dark, 1.5%));
-    }
-    &:active {
-      border-top-color: darken($color-top-border, 11%) !important;
-      border-bottom-color: darken($color-bottom-border, 0%) !important;
-      @include box-shadow(0, 0, 8px, darken($color-dark, 8%), true);
-      @include gradient-vertical(darken($color-light, 7%), darken($color-dark, 1.5%));
-      &:before,
-      &:after {
-        @include gradient-side-borders(darken($color-top-border, 10%), darken($color-bottom-border, 5%));
-      }
-    }
-  }
-}
-/// @name flat-button
-/// @author nvms
-@mixin flat-button($selector, $color-light, $color-dark, $color-top-border, $color-bottom-border, $font-color: #fff, $shadow-color: #555) {
-  .btn#{$selector} {
-    background-color: $color-dark;
-    color: $font-color;
-    &:before,
-    &:after {}
-    &:active {
-      // @include box-shadow(0, 0, 7px, darken($color-dark,5%),true);
-      background-color: darken($color-dark, 5%);
-      &:before,
-      &:after {}
-    }
-    &:hover {
-      // outline: 3px solid rgba(255, 255, 255, 0.5);
-      background-color: lighten($color-dark, 5%);
-      outline-offset: -3px;
-    }
-    &:active {
-      @include box-shadow(0, 0, 7px, darken($color-dark,20%),true);
-      background-color: darken($color-dark, 5%);
-    }
-  }
-}
-/// @name outline-button
-/// @author nvms
-@mixin outline-button($selector, $borcolor, $bgcol: #ffffff, $fontcol: #999) {
-  .btn#{$selector} {
-    border: 1px solid lighten($borcolor, 20%);
-    color: lighten($borcolor, 20%);
-    box-shadow: 0 4px 6px -5px lighten(#bbb, 15%);
-    &:hover {
-      color: lighten($borcolor, 10%);
-      border-color: lighten($borcolor, 10%);
-    }
-    &:active {
-      @include box-shadow(0, 0, 20px, rgba(desaturate(lighten($borcolor, 5%), 20), 0.25), true);
-      @include gradient-vertical(lighten($borcolor, 55%), lighten($borcolor, 55%));
-    }
-  }
-}
+
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  border-radius: $radius;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
 }
 // Single side border-radius
 @mixin border-top-radius($radius) {
-  -webkit-border-top-right-radius: $radius;
-  border-top-right-radius: $radius;
-  -webkit-border-top-left-radius: $radius;
-  border-top-left-radius: $radius;
-  background-clip: padding-box;
+    -webkit-border-top-right-radius: $radius;
+    border-top-right-radius: $radius;
+    -webkit-border-top-left-radius: $radius;
+    border-top-left-radius: $radius;
+    background-clip: padding-box;
 }
 @mixin border-right-radius($radius) {
-  -webkit-border-bottom-right-radius: $radius;
-  border-bottom-right-radius: $radius;
-  -webkit-border-top-right-radius: $radius;
-  border-top-right-radius: $radius;
-  background-clip: padding-box;
+    -webkit-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    -webkit-border-top-right-radius: $radius;
+    border-top-right-radius: $radius;
+    background-clip: padding-box;
 }
 @mixin border-bottom-radius($radius) {
-  -webkit-border-bottom-right-radius: $radius;
-  border-bottom-right-radius: $radius;
-  -webkit-border-bottom-left-radius: $radius;
-  border-bottom-left-radius: $radius;
-  background-clip: padding-box;
+    -webkit-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    -webkit-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+    background-clip: padding-box;
 }
 @mixin border-left-radius($radius) {
-  -webkit-border-bottom-left-radius: $radius;
-  border-bottom-left-radius: $radius;
-  -webkit-border-top-left-radius: $radius;
-  border-top-left-radius: $radius;
-  background-clip: padding-box;
+    -webkit-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+    -webkit-border-top-left-radius: $radius;
+    border-top-left-radius: $radius;
+    background-clip: padding-box;
 }
 @mixin table-tr-color ($selector, $color-border, $color-bg) {
-  .tr#{$selector} {
-    border-color: $color-border !important;
-    background-color: $color-bg !important;
-    z-index: 6;
-  }
-  .table.hover .tr#{$selector}:hover {
-    border-color: darken($color-border, 2%) !important;
-    background-color: darken($color-bg, 2%) !important;
-  }
-  .table.hover-alt .tr#{$selector}:hover {
-    border-color: darken($color-border, 2%) !important;
-    background-color: darken($color-bg, 2%) !important;
-    @include box-shadow(0, 0, 7px, darken($color-bg, 5%), false);
-    z-index:20;
-  }
+    .tr#{$selector} {
+        border-color: $color-border !important;
+        background-color: $color-bg !important;
+        z-index: 6;
+    }
+
+    .table.hover .tr#{$selector}:hover {
+        border-color: darken($color-border, 2%) !important;
+        background-color: darken($color-bg, 2%) !important;
+    }
+
+    .table.hover-alt .tr#{$selector}:hover {
+        border-color: darken($color-border, 2%) !important;
+        background-color: darken($color-bg, 2%) !important;
+        @include box-shadow(0, 0, 7px, darken($color-bg, 5%), false);
+        z-index: 20;
+    }
 }
